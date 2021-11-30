@@ -1,0 +1,2489 @@
+/*********common style******************/
+
+:root {
+  /* Fonts */
+  --main-font: 'Poppins', sans-serif;
+  /* colors */
+  --primary-color: #d4e500;
+  --secondary-color: #191919;
+  /* --third-color: #191919; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: var(--main-font);
+  color: var(--secondary-color);
+  background-color: #fff;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: subpixel-antialiased; */
+}
+
+[tabindex="-1"]:focus:not(:focus-visible) {
+  outline: 0 !important;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:not([href]):not([class]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #858796;
+  text-align: left;
+  caption-side: bottom;
+}
+
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: var(--main-font);
+  font-size: 15px;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: none;
+  box-shadow: none;
+  outline: 0 none;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+select {
+  word-wrap: normal;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+output {
+  display: inline-block;
+}
+
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+a,
+button,
+img,
+input,
+span {
+  transition: all 0.3s ease 0s;
+}
+
+ul li a:hover {
+  color: var(--primary-color)!important;
+}
+
+
+/* web styles*/
+
+.main-content {
+  padding-top: 0 !important;
+}
+/* page: Home start */
+
+.sticky-header.sticky {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 0;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 11%);
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 900ms;
+  animation-duration: 900ms;
+  -webkit-animation-timing-function: cubic-bezier(0.2, 1, 0.22, 1);
+  animation-timing-function: cubic-bezier(0.2, 1, 0.22, 1);
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  border-bottom: 0;
+  display: block;
+}
+
+.primary-btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 50px;
+  height: 50px;
+  padding: 12px 30px;
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  outline: 0;
+  box-shadow: none;
+}
+
+.nav-brand a img {
+  width: 426px;
+  /* max-width: 100%; */
+  image-rendering: -webkit-optimize-contrast;
+}
+
+
+/* mobile responsive menu*/
+
+.canvas-open {
+  position: absolute;
+  right: 15px;
+  top: 22px;
+  z-index: 9;
+  display: none;
+}
+
+.canvas-open a {
+  font-size: 17px;
+  width: 35px;
+  height: 35px;
+  display: block;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #222222;
+  border-radius: 40px;
+}
+
+.offcanvas-menu-wrapper.active {
+  margin-left: 0;
+}
+
+.offcanvas-menu-wrapper {
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  z-index: 999;
+  top: 0;
+  height: 100vh;
+  transition: .5s;
+  left: 0;
+  margin-left: -100%;
+  padding: 80px 30px 30px;
+  overflow-y: auto;
+}
+
+.canvas-close {
+  position: absolute;
+  top: 10px;
+  right: 13px;
+}
+
+.canvas-close a {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 32px;
+  height: 32px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #ededed;
+  border-radius: 50%;
+}
+
+.offcanvas-menu {
+  display: none;
+}
+
+.offcanvas-menu .container {
+  position: relative;
+}
+
+.offcanvas-menu-wrapper .language-currency {
+  display: block;
+  text-align: center;
+}
+
+.offcanvas-menu-wrapper .call-support {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.offcanvas-menu-wrapper .call-support p {
+  border-radius: 0;
+  padding: 5px 0 5px 0;
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.offcanvas-main-menu li a {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  /* border-bottom: 1px solid #ededed; */
+}
+
+.offcanvas-footer {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.offcanvas-footer span a {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.offcanvas-footer span a i {
+  color: var(--primary-color);
+}
+
+.off-canvas-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  cursor: crosshair;
+  background: #222222;
+  top: 0;   
+}
+
+.off-canvas-overlay.active {
+  opacity: 0.5;
+  visibility: visible;
+}
+
+.offcanvas-menu .footer-social {
+  text-align: center !important;
+}
+
+
+/* mobile responsive menu*/
+
+.footer-logos img {
+  width: 286px;
+  max-width: 100%;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.main-menu ul li {
+  display: inline-block;
+  margin-left: -4px;
+}
+
+.main-menu ul li a {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 12px;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: 13px;
+  color: var(--secondary-color);
+}
+
+.main-menu ul li a:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.main-menu ul li a.active,
+.main-menu ul li a.site-nav__link--active {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.main-menu {
+  text-align: right;
+  margin-right: 0;
+}
+
+.footer-follow h2 {
+  font-size: 73px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 24px;
+  line-height: 70px;
+}
+
+.footer-follow h2 span {
+  color: #fff;
+}
+
+.footer-top {
+  background-color: var(--secondary-color);
+  padding: 90px 0 70px;
+}
+
+.footer-social ul li {
+  display: inline-block;
+  margin-right: 84px;
+}
+
+.footer-social ul li a {
+  color: var(--primary-color);
+  font-size: 35px;
+}
+
+.footer-social ul li a.twitter {
+  font-size: 41px;
+}
+
+.footer-social ul li a.instagram svg {
+  height: 35px;
+  vertical-align: -4px;
+}
+
+.footer-social ul {
+  display: flex;
+  align-items: center;
+}
+
+.header-top {
+  background-color: var(--secondary-color);
+  padding: 4px 0px;
+  height: 60px;
+}
+
+.top-link-items ul li a,
+.top-link-items ul li span {
+  color: #a6a6a6;
+  font-size: 13px;
+}
+
+.top-link-items ul li {
+  display: inline-block;
+  margin-right: 30px;
+  padding: 12px 0;
+}
+
+.top-link-items ul li:last-child {
+  margin-right: 0;
+}
+
+span.top-icon {
+  margin-right: 6px;
+}
+
+.top-link-right {
+  text-align: right;
+}
+
+.header-main {
+  padding: 26px 0;
+  background-image: url("https://champion.dieselhausdev.com/images/menu-bg.png");
+  width: 100%;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+
+.footer-logos {
+  margin-top: 30px;
+}
+
+.footer-bottom {
+  background-color: var(--primary-color);
+  padding: 36px 0;
+}
+
+.copyright-area {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.copyright-area p {
+  margin-bottom: 0;
+}
+
+
+/* banner main */
+
+.banner-home {
+  position: relative;
+  background-color: var(--secondary-color);
+  margin-top: -1px;
+}
+
+.banner-cnt-wrap h1 {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-size: 79px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.banner-cnt-wrap p {
+  margin-bottom: 40px;
+  font-size: 15px;
+  color: #fff;
+  padding-right: 10%;
+  line-height: 25px;
+}
+
+.btns-main {
+  -webkit-appearance: none;
+  border-radius: 60px;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 12px 30px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.btns-main:last-child {
+  margin-right: 0;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-border {
+  border: 2px solid var(--primary-color);
+  color: #fff;
+}
+
+.btn-border:hover {
+  color: var(--primary-color);
+}
+
+.banner-bg {
+  min-height: 922px;
+  background-image: url("https://champion.dieselhausdev.com/images/banner-overlay.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: 100% -1px;
+  background-size: cover;
+}
+
+.banner-main-image img {
+  mix-blend-mode: soft-light;
+  fill-opacity: 88;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.banner-main-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner-row {
+  padding-top: 254px;
+}
+
+.banner-paralax {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: -82px;
+  text-align: right;
+}
+
+.perfomance-bg {
+  background-image: url("https://champion.dieselhausdev.com/images/section-two-bg.png");
+  min-height: 1695px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  margin-top: -15.8%;
+  padding-top: 20%;
+  position: relative;
+}
+
+.card-main {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 15px 15px;
+  margin: 0px 16px;
+}
+
+.card-wrapper {
+  border: 2px dashed var(--primary-color);
+  padding: 116px 20px 30px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.card-item {
+  text-align: center;
+}
+
+.card-item h3 {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.card-main:hover {
+  background-color: var(--primary-color);
+}
+
+.card-main:hover .card-wrapper {
+  border-color: #fff;
+}
+
+.card-main:hover .btn-primary {
+  background-color: #000;
+  color: var(--primary-color);
+}
+
+.card-item p {
+  margin-bottom: 27px;
+}
+
+.card-image {
+  text-align: center;
+  /* margin-top: -118px; */
+  padding-bottom: 38px;
+  position: absolute;
+  top: -90px;
+  left: 0;
+  width: 100%;
+}
+
+.card-img-one img {
+  width: 111px;
+}
+
+.card-img-two img {
+  width: 132px;
+}
+
+.card-img-three img {
+  width: 116px;
+  transform: rotate( 17.3deg);
+}
+
+.perform-parallax {
+  position: absolute;
+  left: 0;
+  bottom: 143px;
+}
+
+.btn-black {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.display-head {
+  font-size: 79px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 93px;
+  letter-spacing: -2px;
+  margin-bottom: 68px;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.perform-content {
+  padding-left: 18px;
+  margin-top: 102px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-black:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.perform-content p {
+  margin-bottom: 30px;
+  line-height: 25px;
+}
+
+.btn-wrap.perform {
+  padding-top: 15px;
+}
+
+.video-head h3 {
+  color: var(--primary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 78px;
+  line-height: 74px;
+  letter-spacing: -2px;
+  margin-bottom: 42px;
+}
+
+.video-section {
+  position: relative;
+}
+
+.video-section-main {
+  background-image: url("https://champion.dieselhausdev.com/images/video-main-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  min-height: 1050px;
+  margin-top: -15%;
+  position: relative;
+  padding-top: 13%;
+  padding-bottom: 100px;
+}
+
+.perform-card-row {
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+.video-parallax {
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+}
+
+.perform-parallax img {
+  width: 97.6%;
+  margin-left: -6px;
+}
+
+#my_video {
+  height: 535px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 3px solid var(--primary-color);
+}
+
+.video-js .vjs-big-play-button {
+  /*font-size: 50px;*/
+  line-height: 1.5em;
+  height: 93px;
+  width: 93px;
+  position: absolute;
+  opacity: 1;
+  border: 8px solid var(--primary-color) !important;
+  background-color: rgb(0 0 0 / 79%) !important;
+  border-radius: 100%;
+  transition: all 0.4s;
+  color: var(--primary-color);
+}
+.video-js .vjs-big-play-button span{
+  font-size: 50px;
+  position: absolute;
+  top: 16px;    
+  left: 3px;
+  right: 0;
+}
+.gallery-head {
+  text-align: center;
+}
+
+.box-content-wrap {
+  padding-top: 140px;
+  padding-bottom: 100px;
+}
+
+.gallery-col a {
+  position: relative;
+  display: block;
+}
+
+.row.gallery_container {
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+.our-bikes-card {
+  background-color: #000;
+  border-radius: 16px;
+  /* text-align: center; */
+  min-height: 406px;
+  max-height: 406px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.bike-card-image img {
+  width: 100%;
+  image-rendering: -webkit-optimize-contrast;
+  transform: translate(0px, 40px) scale(1.1);
+}
+
+.link-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(212 229 0 / 90%);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-black.card-link {
+  outline: 8px solid rgb(255 255 255 / 28%);
+}
+
+.our-bikes-card:hover .link-overlay {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.our-bikes-card:hover .bike-card-image img {
+  transform: translate(0px, 40px) scale(2);
+}
+
+.card-bike-detail {
+  margin-top: 18px;
+}
+
+.card-bike-detail h6 {
+  font-size: 19px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: -6px;
+  letter-spacing: -1px;
+}
+
+.card-bike-detail h5 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  letter-spacing: -1px;
+}
+
+.horizontal-line {
+  height: 1px;
+  background-color: #000;
+  width: 100%;
+  margin-right: 46px;
+}
+
+.bikes-row-footer {
+  display: flex;
+  align-items: center;
+}
+
+.bikes-row-footer .btns-main {
+  width: 140px;
+  text-align: center;
+}
+
+.our-bikes-col {
+  margin-bottom: 15px;
+}
+
+.display-head-secondary {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.our-bikes .display-head {
+  font-size: 78px;
+}
+
+.container.our-bikes {
+  margin-top: 122px;
+}
+
+.box-content-wrap {
+  background-image: url("https://champion.dieselhausdev.com/images/box-two-wrap-bg-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+
+.grunge-bg.grunge-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+
+.grunge-bg.grunge-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+}
+
+.top-link-items ul li {
+  margin-right: 8px;
+}
+
+.vjs-youtube-mobile .vjs-big-play-button {
+  display: block !important;
+}
+
+.vjs-youtube-mobile.vjs-has-started .vjs-big-play-button {
+  display: none !important;
+}
+
+.sidemenu-social ul {
+  display: flex;
+  align-items: center;
+}
+
+.sidemenu-social ul li {
+  margin-right: 15px;
+}
+
+.sidemenu-social ul li a {
+  font-size: 25px;
+}
+
+.sidemenu-social {
+  margin-top: 22px;
+}
+
+.sidemenu-contact .mail svg {
+  width: 15px;
+}
+
+.sidemenu-contact ul li {
+  margin-bottom: 6px;
+}
+
+.sidemenu-contact ul li.address span {
+  font-weight: 500;
+}
+
+.sidemenu-contact ul li a {
+  font-weight: 500;
+}
+
+.top-link-items .address {
+  display: none;
+}
+
+
+/* common parts */
+
+.banner-inner {
+  position: relative;
+  min-height: 710px;
+  margin-top: -2px;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  /* background-image: url("../images/inner-banner-primary-bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; */
+  /*overflow: hidden;*/
+}
+
+.banner-inner-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.common-parts img {
+  width: 828px;
+  max-width: 100%;
+  margin-top: 0;
+}
+
+.inner-banner-dtls h1.display-head {
+  margin-bottom: 17px;
+}
+
+.inner-banner-dtls ul {
+  display: flex;
+  align-items: center;
+  line-height: 25px;
+}
+
+.inner-banner-dtls ul li {
+  margin-right: 8px;
+}
+
+.footer-bg {
+  background-image: url("https://champion.dieselhausdev.com/images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+
+.banner-overlay-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner-overlay-image img {
+  mix-blend-mode: soft-light;
+  fill-opacity: 88;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.grunge-black {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+
+.grunge-black img {
+  width: 100%;
+}
+.reviews-section .grunge-black {
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  text-align: right;
+  z-index: 9;
+}
+
+.shop-main-bg {
+  background-image: url("https://champion.dieselhausdev.com/images/shop-main-bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.shop-section {
+  min-height: 1195px;
+  margin-top: -4%;
+  position: relative;
+  z-index: 9;
+  padding-top: 8%;
+}
+
+.form-group.search-field-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-field-wrap .form-control {
+  padding: 12px 18px;
+  color: #000;
+  font-size: 15px;
+  height: auto;
+  border-radius: 12px 0 0 12px;
+  border: 2px solid var(--primary-color);
+}
+
+.search-field-wrap .form-control::placeholder {
+  color: #000;
+}
+
+.search-field-wrap .btn {
+  background-color: var(--primary-color);
+  padding: 11px 17px;
+  border-radius: 0 12px 12px 0;
+  height: 50px;
+  font-size: 18px;
+}
+
+.side-card-head h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.side-card-head {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 16px 10px 12px 0px;
+  border-radius: 13px 13px 0 0;
+}
+
+.category-list-wrap {
+  background-color: #fff;
+  padding: 20px 20px 6px;
+  border: 2px solid var(--primary-color);
+  border-radius: 0 0 13px 13px;
+}
+
+.cat-list li {
+  padding: 5px 0;
+  border-bottom: 2px solid #eaeaea;
+  display: block;
+}
+
+.cat-list li a {
+  padding: 5px 0;
+  display: block;
+  width: 100%;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+.cat-list li a:hover {
+  background-color: #000;
+  padding: 5px 5px 5px 13px;
+}
+
+.cat-list li:last-child {
+  border: none;
+}
+
+.feature-image {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  width: 69px;
+  height: 69px;
+}
+
+li.shop-feature-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 24px 0;
+  border-bottom: 2px solid #eaeaea;
+}
+
+li.shop-feature-item:last-child {
+  border-bottom: none;
+}
+
+.feature-content h5 {
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #031e4e;
+  line-height: 22px;
+}
+
+.feature-content p {
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #031e4e;
+  line-height: 22px;
+}
+
+span.feature-content {
+  margin-left: 12px;
+}
+
+.feature-image img {
+  width: 35px;
+}
+
+.shoping-features-card {
+  background-color: #fff;
+  padding: 0px 10px 0px 18px;
+  border: 2px solid var(--primary-color);
+  border-radius: 13px 13px;
+  margin-top: 35px;
+}
+
+.shop-row {
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+.shop-side-col {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.shop-items-col {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.icon-arrow {
+  display: none;
+}
+
+.icon-arrow img {
+  width: 14px;
+  vertical-align: baseline;
+  margin-right: 8px;
+}
+
+.cat-list li a:hover .icon-arrow {
+  display: inline-block;
+}
+
+.cate-item.active {
+  background-color: #000;
+  padding: 5px 5px 5px 13px;
+  color: var(--primary-color);
+}
+
+.cate-item.active .icon-arrow {
+  display: inline-block;
+}
+
+.common-parts-item {
+  background-color: #fff;
+  border-radius: 16px;
+  /* text-align: center; */
+  min-height: 282px;
+  max-height: 282px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.common-parts-item:hover .link-overlay {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.common-parts-image img {
+  width: 100%;
+}
+
+.common-parts-dtls .product-item-name {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.common-parts-dtls .product-item-price {
+  margin-bottom: 0;
+  font-size: 21px;
+  /*line-height: 21px;*/
+}
+
+.common-parts-dtls {
+  padding-top: 20px;
+}
+
+.shop-row {
+  margin-top: 19px;
+}
+
+.shop-wrap-col {
+  margin-bottom: 48px;
+}
+
+.old-amount {
+  color: #000;
+  font-size: 15px;
+  margin-right: 4px;
+  text-decoration: line-through;
+}
+
+.old-amount.deleted {
+  color: #999999;
+}
+
+span.sale-stamp {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
+  background-color: #000;
+  border-radius: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 51px;
+  height: 51px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.pagination ul li {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  background: #f1f1f1;
+  border-radius: 6px;
+  margin-left: -4px;
+}
+
+.pagination ul li.current {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.pagination ul li.next {
+  width: auto;
+  background-color: transparent;
+  height: auto;
+  line-height: initial;
+  margin-left: 13px;
+}
+
+.pagination ul li.previous {
+  width: auto;
+  background-color: transparent;
+  height: auto;
+  line-height: initial;
+  margin-right: 30px;
+}
+
+.pagination ul li a {
+  display: block;
+  border-radius: 3px;
+}
+
+.previous .btns-main {
+  color: #000;
+}
+
+.previous .btns-main,
+.next .btns-main {
+  border-radius: 60px;
+}
+
+.pagination-row {
+  margin-top: 10px;
+}
+
+.input-number-decrement,
+.input-number-increment {
+  display: inline-block;
+  width: 40px;
+  background: transparent;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.input-number {
+  height: 100%;
+  user-select: none;
+}
+
+.input-number {
+  width: 50px;
+  padding: 0 5px;
+  vertical-align: top;
+  text-align: center;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.quantity-select {
+  display: inline-block;
+  border: 2px solid #000;
+  border-radius: 40px;
+  height: 50px;
+  padding: 0 37px;
+  position: relative;
+  width: 138px;
+}
+
+.qnty-text {
+  color: #000;
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+span.input-number-increment {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  line-height: 16px;
+}
+
+span.input-number-decrement {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  line-height: 16px;
+}
+
+.quantity.prd-single-qnty {
+  display: flex;
+  align-items: center;
+}
+
+form.prd-single-form {
+  display: flex;
+  align-items: center;
+}
+
+.prd-single-form .btn-wrap {
+  margin-left: 35px;
+}
+
+.prd-single-form .btn-wrap .btns-main {
+  margin-right: 17px;
+}
+
+.product-single-desc h2 {
+  font-size: 55px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  line-height: 74px;
+}
+
+.product-single-desc h6 {
+  font-size: 38px;
+  margin-bottom: 41px;
+}
+
+.product-form-wrap {
+  padding: 35px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-top: 50px;
+}
+
+.social-share ul li a.twitter {
+  font-size: 28px;
+}
+
+.social-share ul li a.instagram svg {
+  height: 24px;
+  vertical-align: -2px;
+}
+
+.social-share ul li a {
+  color: #000;
+  font-size: 24px;
+}
+
+.social-share ul li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.social-share {
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.social-share span {
+  margin-right: 50px;
+}
+
+.related-project-row {
+  margin-top: 90px;
+}
+
+.related-heading p {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.related-heading span {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.related-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+/* product image zoom */
+.img-container img {
+  width: 100%;
+  display: block;
+}
+
+.img-container {
+  max-width: 437px;
+  height: 461px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: inherit;
+}
+.img-container:hover {
+  cursor: zoom-in;
+}
+.img-container img {
+  position: absolute;
+  transition: all .03s linear;
+}
+
+.single-image-main span.prd-zoom-icon {
+  z-index: 5;
+  position: absolute;
+  bottom: -14px;
+  right: -14px;
+  transform: translate(-50%, -50%);
+  background-color: #191919;
+  display: block;
+  padding: 12px 10px;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.img-container:hover span {
+display: none;
+}
+.single-image-main a{
+position: relative;
+display: block;
+max-width: 437px;
+height: 461px;
+border-radius: 10px;
+overflow: hidden;
+}
+.single-image-main a img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.single-image-main a:hover span.prd-zoom-icon{
+color: var(--secondary-color);
+background-color: var(--primary-color);
+}
+/* motorcycles */
+.banner-inner-image.motorcycles{
+  right: 0px;
+  top: initial;
+  bottom: -36px;
+}
+.grunge-black.grunge-inner-left {
+  left: 0;
+  text-align: left;
+  bottom: 0;
+  top: initial;
+}
+.grunge-inner-left img{
+  width: auto;
+}
+.body-solid-bg {
+  background-image: url(https://champion.dieselhausdev.com/images/solid-bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+h1.review-title{
+  font-family: 'Poppins';
+  font-size: 65px;
+  text-transform: inherit;
+  line-height: 72px;
+  font-weight: 700;
+  padding-left: 40px;
+}
+h1.review-title::before{
+  content: url('https://champion.dieselhausdev.com/images/quate.png');
+  position: absolute;
+  top: -83px;
+  left:15px;
+}
+.reviews-section p{
+  font-family: 'Poppins';
+  font-size: 19px;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.reviews-section{
+  position: relative;
+  padding-top: 36px;
+}
+.review-mail-section{
+  background-image: url(https://champion.dieselhausdev.com/images/motorcycle-main-bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 227px;
+  position: absolute; 
+  width: 100%;
+  z-index: 9; 
+  margin-top: -155px;
+}
+.review-main-banner{
+  margin-top: -255px;
+  padding-top: 220px;
+  overflow: hidden;
+  
+}
+.motorcycle-footer-main-banner{
+  background-color: unset;
+}
+.review-mail-section p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Poppins';
+}
+.reviews-section .banner-inner-image {
+  position: absolute;
+  z-index: 99;
+}
+.banner-inner-image.motorcycles img{
+  width: 85%;
+  float: right;
+}
+.review-mail-section p a{
+  color: var(--primary-color);
+  font-weight: 800;
+  padding-left: 10px;
+}
+.motorcycle-footer-bg{
+  background-image: url(https://champion.dieselhausdev.com/images/motorcycle-footer-bg.png);
+  height: 402px;
+  margin-top: -110px;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+}
+
+.motorcycle-footer-bg .footer-follow {
+  margin-top: 100px;
+}
+.motorcycle-footer{
+  position: relative;
+}
+.motorcycle-footer .footer-bottom{
+  z-index: 9;
+  position: absolute;
+  bottom: -388px;
+  width: 100%;
+}
+.motorcycle-shop-section{
+  padding-bottom: 210px;
+}
+.media-techtip img{
+  width: 780px;
+  margin-top: 110px;
+  margin-right: 250px;
+}
+.media-blog-bg{
+  background-image: url(https://champion.dieselhausdev.com/images/media-banner2.png);
+  padding-bottom: 30px;
+}
+.blog-each img{
+  width: 560px;
+  height: 375px !important;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.blog-single-image p{
+  background-color: var(--primary-color);
+  padding: 7px 18px !important;
+  width: fit-content;
+  border-radius: 25px;
+  margin-top: -21px;
+  position: absolute;
+  font-size: 15px;
+  font-family: 'Poppins';
+  left: 30px;
+}
+.blog-each h1 a{
+  padding-top: 20px;
+  color: #031e4e;
+  font-size: 28px;   
+  font-family: 'Poppins';
+  font-weight: 700;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.blog-each h1{
+line-height: 40px;
+padding-top: 40px;
+padding-bottom: 4px;
+}
+.blog-each p{
+  line-height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.blog-each  a.btns-main{
+  margin-top: 9px;
+  float: right;
+}
+.blog-each-section{
+  padding-bottom: 70px;
+}
+.blog-each-section .btn-primary:hover, .blog-share-section .btn-primary:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+}
+.coming-soon-footer{
+  background-image: url('https://champion.dieselhausdev.com/images/motorcycle-footer-bg.png');
+}
+.single-blog-content{
+  padding-top: 45px;
+  position: relative;
+  padding-bottom: 38px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+.blog-single-image img{
+  width: 100%;
+  height: 565px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.single-blog-content h1{
+  font-size: 48px;
+  font-family: 'Poppins';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  line-height: 58px;
+  padding-top: 53px;
+  padding-bottom: 23px;
+}
+.single-blog-content p{
+  padding-bottom: 8px;
+  line-height: 25px;
+}
+.blog-share-section, .blog-share-section ul{
+  display: flex;
+  align-items: center;
+}
+.blog-share-section h6{
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+.blog-share-section ul li{
+  padding-left: 50px;
+}
+.blog-share-section ul li i{
+  font-size: 20px;
+}
+.blog-share-section{
+  padding-top: 55px;
+  padding-bottom: 100px;
+  position: relative;
+}
+.blog-share-section .btns-main{
+  position: absolute;
+  right: 0;
+}
+.about-banner{
+  top: unset;
+  bottom: 0;
+}
+.about-content-banner{
+  background-image: url(https://champion.dieselhausdev.com/images/about-mid-top.png);
+  background-position: top   center;
+  margin-top: -5%;
+  min-height: 1718px;
+  position: relative;
+}
+.about-top-content{
+  padding: 0px 70px;
+}
+.about-top-content h2{
+  padding-bottom: 24px;
+  margin-bottom: 0px;
+  font-size: 74px;
+}
+.about-mid-top{
+  padding: 45px 100px 372px 100px;
+  height: 800px;
+}
+.about-mid-bottom{
+  padding: 74px 0px;
+}
+.about-mid-bottom h3{
+  margin-bottom: 40px;
+}
+.about-mid-image img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 990px;
+  height: 1106px;
+  max-width: 100%;
+}
+.about-bottom-content{
+  background-image: url(https://champion.dieselhausdev.com/images/about-mid-bottom.png);
+  background-position: top center;
+  min-height: 1050px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 73px;
+}
+.about-bottom-top-section{
+  padding-left: 260px;
+  padding-top: 90px;
+ /* -webkit-transform: skew( 
+      10deg);
+  -moz-transform: skew(316deg);
+  -o-transform: skew(316deg);
+  transform: skew(316deg);*/
+}
+.para-span {
+  /*-webkit-transform: skew(
+      -10deg);
+  -moz-transform: skew(-316deg);
+  -o-transform: skew(-316deg);
+  transform: skew(-316deg);*/
+  display: inline-block;
+}
+.about-bottom-bootom-section{
+  padding-top: 108px;
+}
+.about-bottom-bootom-section h2{
+  margin-bottom: 42px;
+  padding-left: 100px;
+}
+.king-cobra-section{
+  padding-top: 100px;
+}
+.king-cobra-section h2{
+  font-size: 93px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: -21px;
+}
+.king-cobra-section h3{
+  font-size: 78px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.cobra-title-section{
+  text-align: center;
+}
+#counter
+{
+width: 180px;
+height: 180px;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+margin: 0 auto;
+border: 8px solid var(--primary-color);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.count
+{
+line-height: 100px;
+color: var(--primary-color);
+font-size: 45px;
+font-weight: 700;
+}
+#talkbubble {
+width: 120px;
+height: 80px;
+background: red;
+position: relative;
+-moz-border-radius:    10px;
+-webkit-border-radius: 10px;
+border-radius:         10px;
+float:left;
+margin:20px;
+}
+#talkbubble:before {
+content:"";
+position: absolute;
+right: 100%;
+top: 26px;
+width: 0;
+height: 0;
+border-top: 13px solid transparent;
+border-right: 26px solid red;
+border-bottom: 13px solid transparent;
+}
+
+.linker
+{
+font-size : 20px;
+font-color: black;
+}
+span.count::after {
+content: " +";
+display: inline-block;
+}
+.counter-section{
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 27px 0px 8px 0px;
+}
+.counter-section p{
+  color: #fff;
+  line-height: 25px;
+  padding-top: 18px;
+}
+.counter-row{
+  padding-top: 52px;
+}
+.cobra-section-2{
+  background-image: url(https://champion.dieselhausdev.com/images/cobra-banner2.png);
+  min-height: 1040px;
+  background-position: top;
+  background-size: cover;
+  margin-top: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.motorcycle-single-banner{
+  position: relative;
+  min-height: 652px;
+  margin-top: -1px;
+  display: flex;
+  align-items: center;
+  background-image: url(https://champion.dieselhausdev.com/images/motor-single-banner.png);
+  overflow: hidden;
+  background-position: top;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.motorcycle-single-banner .inner-banner-container{
+  min-height: 557px;
+  display: flex;
+  align-items: center;
+}
+.cobra-section-2 h6{
+  color: #fff;
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 85px;
+}
+.cobra-section-2 .banner-cnt-wrap{
+  margin-top: 145px;
+}
+.bike-flex-section .our-bikes-col{
+  width: 25%;
+}
+.bike-flex-section .our-bikes-row{
+  display: flex;
+}
+.bike-flex-section .our-bikes-card{
+  border-radius: 0px;
+  border: 1px solid #fff;
+}
+.bike-flex-section .our-bikes-card:nth-child(1){
+  border-left: none;
+}
+.bike-flex-section .our-bikes-card:nth-child(4){
+  border-right: none;
+}
+.bike-flex-section .btns-main{
+  padding: 13px 19px;
+  font-size: 20px;
+}
+.motorcycle-tab-section{
+  padding: 83px 0px;
+}
+.motorcycle-tab-section .tab-container input {
+display: none;
+}
+.motorcycle-tab-section .tab-container input:checked + label {
+background: var(--secondary-color);
+border: 0px solid var(--secondary-color);
+color: var(--primary-color);
+}
+
+.motorcycle-tab-section .tab-container input#tab1:checked ~ .content-container #c1 {
+opacity: 1;
+}
+
+.motorcycle-tab-section .tab-container input#tab2:checked ~ .content-container #c2 {
+opacity: 1;
+}
+
+.motorcycle-tab-section .tab-container input#tab3:checked ~ .content-container #c3 {
+opacity: 1;
+}
+
+.motorcycle-tab-section .tab-container input#tab4:checked ~ .content-container #c4 {
+opacity: 1;
+}
+.motorcycle-tab-section .tab-container label {
+display: inline-block;
+font-size: 15px;
+height: 52px;
+text-align: center;
+background: var(--primary-color);
+color: var(--secondary-color);
+position: relative;
+transition: 0.25s background ease;
+cursor: pointer;
+padding: 11px 30px;
+margin-right: 7px;
+line-height: 30px;
+}
+.motorcycle-tab-section .tab-container label:hover::after {
+opacity: 1;
+}
+
+.motorcycle-tab-section .tab-container .content-container {
+position: relative;
+margin-top: 66px;
+}
+.motorcycle-tab-section .tab-container .content-container .content {
+position: absolute;
+padding: 10px;
+width: 100%;
+top: 0;
+opacity: 0;
+transition: 0.25s ease;
+color: #333;
+}
+.table-flex:last-child{
+  border-bottom: 0px;
+}
+
+.motorcycle-tab-section .tab-container{
+  text-align: center;
+  min-height: 1340px;
+}
+.tab-image-sec{
+  position: absolute;
+  left: 0;
+}
+.content-container table{
+  width: 682px;
+  max-width: 100%;
+}
+.content-container td {
+border-bottom: 1px solid #bebebe;
+width: 170px;
+text-align: left;
+font-size: 15px;
+color: var(--secondary-color);
+}
+.tab-table-section{
+  padding-left: 60px;
+  text-align: left;
+}
+.table-flex{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #bebebe;
+  padding: 13px 0px;
+}
+.table-flex span{
+  min-width: 170px;
+  text-align: left;
+  font-size: 15px;
+  color: var(--secondary-color);
+}
+.table-flex  p{
+  margin-bottom: 0px;
+  font-size: 15px;
+  color: var(--secondary-color);
+}
+.motorcycle-single-bottom-section.reviews-section .banner-inner-image {
+  z-index: 99;
+}
+.motorcycle-single-bottom-section .grunge-black {
+  top: -334px;
+  z-index: 9;
+}
+.motorcycle-single-bottom-section h1::before{
+  content: none;
+}
+.motorcycle-single-bottom-section h1.review-title{
+  padding-left: 0px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.motorcycle-single-bottom-section .btns-main {
+  padding: 6px 70px;
+  font-size: 24px;
+  text-transform: initial;
+}
+.about-top-content img{
+  max-width: 100%;    
+}
+.motorcycle-single-banner .banner-inner-image.motorcycles {   
+  text-align: right;
+  right: 0;
+  top: 0px;
+}
+.top-link-items .phone .top-icon{
+  vertical-align: 2px;
+}
+.top-link-items .mail .top-icon{
+  vertical-align: 2px;
+}
+.top-link-items .address .top-icon{
+  vertical-align: 2px;
+}
+.gallery_container .gallery-col{
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}
+.expectation-section .our-bikes-col{
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.inner-banner-dtls a:hover{
+  color: #006d74 !important;
+}
+.inner-banner-dtls li:last-child a{
+  pointer-events: none;
+}
+p{
+  line-height: 25px;
+}
+.about-mid-bottom p{
+  padding-bottom: 8px;
+}
+.about-bottom-bootom-section p{
+  padding-bottom: 9px;
+}
+.about-main-banner .banner-inner-image {
+  right: 0px;  
+}
+.about-bottom-top-section:before {
+  content: '';
+  width: 33%;
+  height: 100%;
+  /*background-color: lightgray;*/
+  -webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
+  shape-outside: polygon(0 0, 0 100%, 100% 0);
+  float: left;
+  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+.shop-side-col{
+  flex: 0 0 26%;
+  max-width: 26%;
+}
+.shop-items-col{
+  flex: 0 0 74%;
+  max-width: 74%;
+}
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+.social-share ul li a:hover{
+  color: #191919 !important;
+}
+.shop-section.shop-single{
+  padding-bottom: 86px;
+}
+.blog-each-section:nth-child(odd){
+  padding-right: 25px;
+}
+.blog-each-section:nth-child(even){
+  padding-left: 25px;
+}
+.blog-share-section ul li a:hover{
+  color: #191919 !important;
+}
+.motorcycle-banner-section .grunge-black img{
+  width: 100%;
+}
+.motorcycle-banner-section .grunge-black.grunge-inner-left{
+  width: 17%;
+}
+.motorcycle-shop-section{
+  padding-top: 10.3%;
+  min-height: 1100px;
+}
+.shop-single.motorcycle-shop-section .our-bikes-col {
+  padding-bottom: 60px;
+}
+.banner-inner.review-main-banner{
+  min-height: 760px;
+}
+.review-mail-section p a:hover{
+  color: #fff;
+}
+.search-row .search-wrap{
+  padding-left: 10px;
+}
+.blog-each-section:nth-child(even) .blog-single-image p{
+  left: 40px;
+}
+.reviews-section .banner-overlay-image img{
+  mix-blend-mode: inherit;
+}
+.motorcycle-single-bottom-section.reviews-section .banner-overlay-image img{
+  mix-blend-mode: soft-light  !important;
+}
+.motorcycle-footer .ftr-top-col{
+  padding-left: 27px;
+}
+#one{
+  padding-right: 0px;
+  padding-top: 20px;
+}
+.comming-soon-footer .motorcycle-footer-bg{
+  margin-top: -60px;    
+}
+.comming-soon-footer .footer-bottom {
+  bottom: -438px;
+}
+.motorcycle-single-banner:after{
+content: '';
+background-image: url(https://champion.dieselhausdev.com/images/banner-bottom-white.png);
+height: 200px;
+width: 100%;
+z-index: 999;
+background-position: 5% 121%;
+margin-top: -50px;
+}
+.motorcycle-single-bottom-section:before{
+  content: '';
+  background-image: url(https://champion.dieselhausdev.com/images/bg-white.png);
+  height: 200px;
+  width: 100%;
+  z-index: 1;
+  background-position: 5% 121%;
+  top: -85px;
+  position: absolute;
+} 
+.motorcycle-single-bottom-section .inner-banner-dtls{
+  margin-top: -40px;
+}
+.motorcycle-single-bottom-section .banner-inner{
+  min-height: 550px;
+}
+.counter-row .col-md-3:nth-child(1) .count::after{
+  content: none;
+}
+.cobra-section-2 .banner-cnt-wrap h1 {
+  font-size: 78px;
+  line-height: 75px;
+}
+.shp-details-row .col-md-5{
+  flex: 0 0 38%;
+  max-width: 38%;
+}
+.shp-details-row .col-md-7{
+  flex: 0 0 62%;
+  max-width: 62%;
+}
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close{
+  cursor: auto !important;
+}
+.blog-share-section .btns-main{
+  padding: 12px 48px;
+}
+.perfomance-section.perfomance-bg .container{
+  padding: 0px;
+}
+.about-main-banner .banner-overlay-image img{
+  object-position: center; 
+}

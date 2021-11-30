@@ -1,0 +1,1710 @@
+/*************Responsive Styles*****************/
+
+
+/***************iPhone Portrait**************/
+
+@media only screen and (max-width: 479px) and (min-width: 318px) {
+    .display-head {
+        font-size: 35px;
+        line-height: 35px;
+        letter-spacing: 0;
+        margin-bottom: 20px;
+    }
+    .motorcycle-single-banner .inner-banner-container {
+    min-height: 133px;
+}
+.tab-image-sec img {
+    width: 100% !important;
+    float: initial !important;
+}
+    .video-head h3 {
+        font-size: 35px;
+        line-height: 34px;
+        letter-spacing: 0;
+        margin-bottom: 22px;
+    }
+    .footer-follow h2 {
+        font-size: 28px;
+        margin-bottom: 3px;
+        line-height: 37px;
+    }
+    .grunge-bg img {
+        width: 35%;
+        image-rendering: -webkit-optimize-contrast;
+    }
+    .banner-cnt-wrap h1 {
+        font-size: 35px;
+    }
+    .our-bikes .display-head {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+    .display-head-secondary {
+        font-size: 18px;
+    }
+    #my_video {
+        height: 295px;
+    }
+    .perform-card-row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .row.gallery_container {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .gallery_container .gallery-col,
+    .video_container .gallery-col {
+        padding: 9px 15px;
+    }
+    .box-content-wrap {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .bikes-row-footer .btns-main {
+        width: 218px;
+    }
+    .our-bikes-card {
+        min-height: 286px;
+        max-height: 286px;
+    }
+    .card-bike-detail h5 {
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+    .card-bike-detail h6 {
+        font-size: 16px;
+        margin-bottom: 0;
+        letter-spacing: 0;
+    }
+    .container.our-bikes {
+        margin-top: 52px;
+    }
+    .video-parallax img {
+        width: 100%;
+    }
+    .video-section-main {
+        min-height: 510px;
+        margin-top: 0;
+        padding-top: 33%;
+        padding-bottom: 70px;
+    }
+    .perform-parallax img {
+        width: 77.6%;
+        margin-left: 0;
+    }
+    .perform-parallax {
+        bottom: -120px;
+    }
+    .perfomance-bg {
+        min-height: 925px;
+        margin-top: -60px;
+        padding-top: 30%;
+    }
+    .card-wrapper {
+        padding: 30px 20px 30px;
+    }
+    .card-img-two img {
+        width: 83px;
+    }
+    .card-image {
+        position: relative;
+        margin-top: 0;
+        padding-bottom: 18px;
+        top: 0;
+    }
+    .card-img-three img {
+        width: 86px;
+    }
+    .perform-content {
+        margin-top: 40px;
+    }
+    .banner-bg {
+        min-height: 642px !important;
+        background-position: 60% -1px;
+    }
+    .banner-paralax img {
+        width: 70%;
+    }
+    .banner-row {
+        padding-top: 134px;
+    }
+    .banner-paralax {
+        right: 0;
+        bottom: 0;
+        margin-top: 0;
+        top: initial;
+    }
+    .banner-cnt-wrap p {
+        margin-bottom: 18px;
+    }
+    .top-link-items-left {
+        display: none;
+    }
+    .vjs-big-play-centered .vjs-big-play-button {
+        left: 60%;
+    }
+    .footer-top {
+        padding: 20px 0 40px;
+    }
+    .footer-logos {
+        margin-top: 10px;
+    }
+    .footer-logos img {
+        width: 216px;
+    }
+    .footer-social ul li {
+        margin-right: 26px;
+    }
+    .footer-follow {
+        margin-top: 25px;
+    }
+    .footer-bottom {
+        padding: 18px 0;
+    }
+    .banner-inner-image.about-banner{
+        text-align: right;
+        right: -180px;
+    }
+    .banner-inner-image.about-banner img{
+        width: 85%;
+    }
+    .about-top-content {
+        padding: 0px 0px;
+    }
+    .about-content-banner {
+        margin-top: -10%;
+    }
+    .about-mid-top {
+        padding: 65px 0px 0px 0px;
+    }
+    .about-mid-image img {
+        width: 50%;
+        height: auto;
+    }
+    .about-content-banner {
+        min-height: unset;
+    }
+    .about-bottom-top-section {
+        padding-left: 170px;
+    }
+    .about-bottom-bootom-section {
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+    .banner-inner.banner-inner-bg{
+        min-height: 238px;
+    }
+    .about-top-content img {
+        width: 100%;
+    }
+    .banner-inner-image {
+        position: absolute;
+        text-align: right;
+    }
+    .common-parts img {
+        max-width: 63%;
+    }
+    .inner-banner-container{
+        position: relative;
+        z-index: 9;
+    }
+    .grunge-black img {
+        width: 32%;
+    }
+    .inner-banner-dtls h1.display-head {
+        font-size: 25px;
+    }
+    .inner-banner-dtls ul li {
+        margin-right: 2px;
+        font-size: 10px;
+    }
+    .product-single-desc h2 {
+        font-size: 45px;
+    }
+    form.prd-single-form {
+        display: block;
+    }
+    .prd-single-form .btn-wrap{
+        margin-left: 0px;
+        padding-top: 30px;
+    }
+    .related-project-row .common-parts-dtls {
+        padding-bottom: 40px;
+    }
+    .shoping-features-card{
+        margin-bottom: 35px;
+    }
+    .shop-section {
+        margin-top: -50%;
+        padding-top: 60%;
+    }
+    .shop-section.shop-single {
+        margin-top: -44%;
+        padding-top: 60%;
+    }
+    .shop-section.media-blog-bg {
+        margin-top: -23%;
+        padding-top: 25%;
+    }
+    .pagination ul li.previous {
+        margin-right: 5px;
+    }
+    .pagination ul li.next {
+        margin-left: 0px;
+    }
+    .pagination-row {
+        margin-bottom: 40px;
+    }
+    .blog-single-image img {
+        height: 300px !important;
+    }
+    .single-blog-content h1{
+        font-size: 35px;
+        line-height: 43px;
+    }
+    .blog-share-section ul li {
+        padding-left: 20px;
+    }
+    .blog-share-section {
+        padding-bottom: 30px;
+    }
+    .media-techtip img {
+        margin-top: 70px;
+        margin-right: 0px;
+    }
+    .media-blog-section{
+        margin-top: -35% !important;
+        padding-top: 50% !important;
+    }
+    .blog-each-section {
+        padding-bottom: 50px;
+    }
+    .motorcycle-footer-bg {
+        display: flex;
+        align-items: center;
+        height: 400px;
+        margin-top: -60px;
+    }
+    .motorcycle-footer .footer-bottom {
+        bottom: -398px;
+    }
+    .motorcycle-shop-section{
+        margin-top: -33%;
+        padding-top: 50%;
+    }
+    .banner-inner-image.motorcycles img {
+        width: 40%;
+    }
+    h1.review-title {
+        font-size: 35px;
+        line-height: 40px;
+        padding-left: 40px;
+    }
+    .review-main-banner{
+        min-height: 600px !important;
+        padding-top: 290px;
+    }
+    .banner-inner-image.motorcycles {
+        right: -10px;
+    }
+    h1.review-title::before {
+        top: -40px;
+    }
+    .reviews-section .grunge-black {
+        top: unset;
+        bottom: 0;
+    }
+    .review-mail-section p {
+        display: block;
+        top: 70px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .motorcycle-single-banner {
+        min-height: 160px;
+    } 
+    .motorcycle-single-banner .banner-inner-image.motorcycles img {
+        width: 80%;
+    }
+    .motorcycle-single-banner .grunge-black img {
+        width: 30%;
+    }
+    .king-cobra-section h2 {
+        font-size: 50px;
+
+        margin-bottom: 0px;
+
+    }
+    .king-cobra-section h3 {
+        font-size: 35px;
+    }
+    .cobra-section-2 h6 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .cobra-section-2 {
+        min-height: 640px;
+    }
+    .motorcycle-tab-section {
+        padding: 50px 0px;
+    }
+    .motorcycle-tab-section .tab-container {
+        min-height: 2000px;
+    }
+    .motorcycle-single-bottom-section .review-main-banner {
+        min-height: 460px !important;
+        padding-top: 0px;
+    }
+    .counter-row .col-md-3{
+        margin-bottom: 20px;
+    }
+    .tab-image-sec img {
+        width: 285px !important;
+    }
+    .bike-flex-section .our-bikes-row {
+        display: block;
+    }
+    .bike-flex-section .our-bikes-col {
+        width: 100%;
+    }
+    .bike-flex-section .our-bikes-col {
+        margin-bottom: 0px;
+    }
+    .blog-each h1 a {
+        font-size: 20px;
+    }
+    .blog-each h1 {
+        line-height: 25px;
+    }
+    .shop-section.shop-single.motorcycle-shop-section{
+        margin-top: -33%;
+        padding-top: 50%;
+    }
+    .motorcycle-shop-section {
+        padding-bottom: 145px;
+    }
+    .tab-image-sec {
+        position: initial;
+    }
+    .motorcycle-tab-section .tab-container label{
+        width: 200px;
+        height: auto;
+    }
+    .tab-table-section {
+        padding-left: 7px;
+        text-align: left;
+        padding-right: 7px;
+        padding-top: 21px;
+    }
+    .review-main-banner {
+        margin-top: 0px;
+    }
+    .motorcycle-single-bottom-section .btns-main {
+        font-size: 15px;
+        line-height: 40px;
+    }
+}
+
+
+/**********************iPhone Landscape*************/
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+    .banner-inner-image.about-banner{
+        text-align: right;
+        right: -180px;
+    }
+    .banner-inner-image.about-banner img{
+        width: 85%;
+    }
+    .about-top-content {
+        padding: 0px 0px;
+    }
+    .tab-image-sec {
+        position: initial;
+    }
+    .tab-table-section {
+        padding-left: 25px;
+        padding-right: 0px;
+    }
+    .review-main-banner {
+        margin-top: 0px;
+    }
+    .motorcycle-shop-section{
+        margin-top: -14% !important;
+        padding-top: 23% !important;
+    }
+    .motorcycle-shop-section {
+        padding-bottom: 125px;
+    }
+    .review-mail-section p {
+        display: block;
+        top: 70px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .banner-inner-image.motorcycles {
+        right: 0px;
+    }
+    .shop-section.shop-single {
+       margin-top: -19%;
+       padding-top: 25%;
+   }
+   .banner-inner-image.motorcycles img {
+    width: 35%;
+}
+h1.review-title {
+    font-size: 35px;
+    line-height: 40px;
+    padding-left: 40px;
+}
+.review-main-banner{
+    min-height: 600px !important;
+}
+h1.review-title::before {
+    top: -40px;
+}
+.reviews-section .grunge-black {
+    top: unset;
+    bottom: 0;
+}
+.our-bikes-col {
+    width: 50%;
+}
+.media-blog-section{
+    margin-top: -12% !important;
+    padding-top: 20% !important;
+}
+.blog-each h1 a {
+    font-size: 20px;
+}
+.blog-each h1 {
+    line-height: 25px;
+}
+.blog-each-section{
+    width: 50%;
+}
+.about-content-banner {
+    margin-top: -10%;
+}
+.about-mid-top {
+    padding: 65px 0px 0px 0px;
+}
+.about-mid-image img {
+    width: 50%;
+    height: auto;
+}
+.about-content-banner {
+    min-height: unset;
+}
+.about-bottom-top-section {
+    padding-left: 170px;
+}
+.about-bottom-bootom-section {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.banner-inner {
+    min-height: 470px;
+}
+.about-top-content .col-md-4, .about-top-content .col-md-8{
+    width: 50%;
+}
+.banner-inner.banner-inner-bg{
+    min-height: 300px;
+}
+.about-top-content img {
+    width: 100%;
+}
+.banner-inner-image {
+    position: absolute;
+    text-align: right;
+}
+.common-parts img {
+    max-width: 63%;
+}
+.inner-banner-container{
+    position: relative;
+    z-index: 9;
+}
+.grunge-black img {
+    width: 61%;
+}
+.inner-banner-dtls h1.display-head {
+    font-size: 25px;
+}
+.inner-banner-dtls ul li {
+    margin-right: 2px;
+    font-size: 10px;
+}
+.product-single-desc h2 {
+    font-size: 45px;
+}
+.single-image-main a{
+    max-width: 100%;
+}
+.related-project-row .common-parts-dtls {
+    padding-bottom: 40px;
+}
+.shop-related-col{
+    width: 50%;
+}
+.shoping-features-card{
+    margin-bottom: 35px;
+}
+.common-part-shop{
+    margin-top: -20%;
+    padding-top: 26%;
+}
+.pagination ul li.previous {
+    margin-right: 5px;
+}
+.pagination ul li.next {
+    margin-left: 0px;
+}
+.pagination-row {
+    margin-bottom: 40px;
+}
+.shop-wrap-col {
+    width: 50%;
+}
+.shop-section.media-blog-bg {
+   margin-top: -8%;
+   padding-top: 8%;
+}
+.pagination ul li.previous {
+    margin-right: 5px;
+}
+.pagination ul li.next {
+    margin-left: 0px;
+}
+.pagination-row {
+    margin-bottom: 40px;
+}
+.blog-single-image img {
+    height: 270px !important;
+}
+.single-blog-content h1{
+    font-size: 35px;
+    line-height: 43px;
+}
+.blog-share-section ul li {
+    padding-left: 20px;
+}
+.blog-share-section {
+    padding-bottom: 30px;
+}
+.motorcycle-footer-bg {
+    display: flex;
+    align-items: center;
+    height: 300px;;
+    margin-top: -60px;
+}
+.motorcycle-footer .footer-bottom {
+    bottom: -297px;
+}
+.motorcycle-footer-bg .footer-follow {
+    margin-top: 30px;
+}
+.motorcycle-single-banner {
+    min-height: 260px;
+} 
+.motorcycle-single-banner .banner-inner-image.motorcycles img {
+    width: 80%;
+}
+.motorcycle-single-banner .grunge-black img {
+    width: 30%;
+}
+.king-cobra-section h2 {
+    font-size: 50px;
+
+    margin-bottom: 0px;
+
+}
+.king-cobra-section h3 {
+    font-size: 35px;
+}
+.cobra-section-2 h6 {
+    font-size: 25px;
+    line-height: 40px;
+}
+.cobra-section-2 {
+    min-height: 640px;
+}
+.motorcycle-tab-section {
+    padding: 50px 0px 0px 0px;
+}
+.motorcycle-tab-section .tab-container {
+    min-height: 1560px;
+}
+.motorcycle-single-bottom-section .review-main-banner {
+    min-height: 460px !important;
+    padding-top: 0px;
+}
+.counter-row .col-md-3{
+    margin-bottom: 20px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.tab-image-sec img {
+    width: 285px !important;
+}
+.bike-flex-section .our-bikes-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.bike-flex-section .our-bikes-col {
+    width: 50%;
+
+}
+.bike-flex-section .our-bikes-col {
+    margin-bottom: 0px;
+}
+ .tab-image-sec img {
+    width: 40% !important;
+    float: left;
+}
+}
+
+
+/*************************iPad Portrait***************/
+
+@media only screen and (max-width: 985px) and (min-width: 768px) {
+    .banner-inner-image.about-banner{
+        text-align: right;
+        right: -180px;
+    }
+    .banner-inner-image.about-banner img{
+        width: 85%;
+    }
+    .about-top-content {
+        padding: 0px 0px;
+    }
+    .about-content-banner {
+        margin-top: -10%;
+    }
+    .about-mid-top {
+        padding: 65px 0px 0px 0px;
+    }
+    .about-mid-image img {
+        width: 50%;
+        height: auto;
+    }
+    .about-content-banner {
+        min-height: unset;
+    }
+    .about-bottom-top-section {
+        padding-left: 170px;
+    }
+    .about-bottom-bootom-section {
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+    .banner-inner.banner-inner-bg{
+        min-height: 300px;
+    }
+    .about-top-content img {
+        width: 100%;
+    }
+    .banner-inner-image {
+        position: absolute;
+        text-align: right;
+    }
+    .common-parts img {
+        max-width: 63%;
+    }
+    .inner-banner-container{
+        position: relative;
+        z-index: 9;
+    }
+    .grunge-black img {
+        width: 18%;
+    }
+    .shop-section {
+        margin-top: -9%;
+        padding-top: 15%;
+        padding-bottom: 40px;
+    }
+    .prd-single-form .btn-wrap {
+        text-align: center;
+    }
+    .prd-single-form .btn-wrap .btns-main {
+        margin: 10px 0px;
+    }
+    .common-parts-item{
+        min-height: 200px;
+    }
+    .motorcycle-shop-section{
+        min-height: 1000px;
+    }
+    .shop-row .shop-side-col{
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    .shop-row .shop-items-col{
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+    .shop-row .shop-wrap-col{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .media-techtip img {
+        margin-top: 60px;
+        margin-right: 80px;
+    }
+    .blog-single-image img {
+        height: 340px;
+    }
+    .single-blog-content {
+        padding-top: 0px;
+    }
+    .blog-share-section {
+        padding-bottom: 30px;
+    }
+    .motorcycle-footer-bg {
+        display: flex;
+        align-items: center;
+        height: 400px;
+        margin-top: -60px;
+    }
+    .motorcycle-footer .footer-bottom {
+        bottom: -397px;
+    }
+    .review-mail-section p {
+        display: block;
+        top: 70px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .banner-inner-image.motorcycles {
+        right: 0px;
+    }
+    .banner-inner-image.motorcycles img {
+        width: 35%;
+    }
+    h1.review-title {
+        font-size: 35px;
+        line-height: 40px;
+        padding-left: 40px;
+    }
+    .review-main-banner{
+        min-height: 600px !important;
+        padding-top: 280px;
+    }
+    h1.review-title::before {
+        top: -40px;
+    }
+    .reviews-section .grunge-black {
+        top: unset;
+        bottom: 0;
+    }
+    .motorcycle-single-banner {
+        min-height: 300px;
+    } 
+    .motorcycle-single-banner .banner-inner-image.motorcycles img {
+        width: 70%;
+    }
+    .motorcycle-single-banner .grunge-black img {
+        width: 30%;
+    }
+    .king-cobra-section h2 {
+        font-size: 55px;
+
+        margin-bottom: 0px;
+
+    }
+    .king-cobra-section h3 {
+        font-size: 35px;
+    }
+    .cobra-section-2 h6 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .cobra-section-2 {
+        min-height: 640px;
+    }
+    .motorcycle-tab-section {
+        padding: 50px 0px;
+    }
+    .motorcycle-tab-section .tab-container {
+        min-height: 1560px;
+    }
+    .motorcycle-single-bottom-section .review-main-banner {
+        min-height: 460px !important;
+        padding-top: 0px;
+    }
+    .counter-row .col-md-3{
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+    .tab-image-sec img {
+        width: 285px !important;
+    }
+}
+
+
+/**************iPad Landscape Start***************/
+
+@media only screen and ( max-width: 1024px) and (min-width: 986px) {
+    .about-mid-top{
+        padding-bottom: 0px;
+    }
+    .tab-image-sec img {
+    width: 40% !important;
+    float: left;
+}
+    .motorcycle-footer-bg {
+        display: flex;
+        align-items: center;
+    }
+
+    .about-mid-image img {
+        width: 50%;
+        height: auto;
+    }
+    .about-content-banner {
+        min-height: unset;
+    }
+    .about-bottom-top-section {
+        padding-left: 280px;
+    }
+    .about-bottom-content {
+        padding-bottom: 50px;
+    }
+    .banner-inner-image.about-banner {
+        right: -300px;
+    }
+    .banner-inner{
+        min-height: 510px;
+    }
+    .common-parts img {
+        width: 480px;
+    }
+    .grunge-black img {
+        width: 70%;
+    }
+    .shop-section {
+        margin-top: -9%;
+        padding-top: 15%;
+        min-height: 1060px;
+    }
+    .blog-single-image img {
+        height: 400px;
+    }
+    .single-blog-content {
+        padding-top: 0px;
+    }
+    .blog-share-section {
+        padding-bottom: 30px;
+    }
+    .banner-inner-image.motorcycles img {
+        width: 60%;
+    }
+    .banner-inner-image.motorcycles {
+        right: -430px;
+    }
+    .motorcycle-banner-section .grunge-black img {
+        width: 20%;
+    }
+    h1.review-title {
+        font-size: 35px;
+        line-height: 40px;
+        padding-left: 40px;
+    }
+    .review-main-banner{
+       min-height: 700px !important;
+       padding-top: 220px;
+   }
+   h1.review-title::before {
+    top: -40px;
+}
+.motorcycle-single-banner {
+    min-height: 400px;
+} 
+.motorcycle-single-banner .banner-inner-image.motorcycles img {
+    width: 70%;
+}
+.motorcycle-single-banner .grunge-black img {
+    width: 30%;
+}
+.king-cobra-section h2 {
+    font-size: 55px;
+    margin-bottom: 0px;
+}
+.king-cobra-section h3 {
+    font-size: 35px;
+}
+.cobra-section-2 h6 {
+    font-size: 25px;
+    line-height: 40px;
+}
+.cobra-section-2 {
+    min-height: 640px;
+}
+.motorcycle-tab-section {
+    padding: 50px 0px;
+}
+.motorcycle-tab-section .tab-container {
+    min-height: 1500px;
+}
+.motorcycle-single-bottom-section .review-main-banner {
+    min-height: 550px !important;
+    padding-top: 0px;
+}
+}
+
+
+/**************iPad Landscape End***************/
+
+
+/******** laptop and tablet screen **********/
+
+@media only screen and (max-width: 767px) {
+    .canvas-open {
+        right: 0;
+        top: 0;
+        text-align: right;
+        position: relative;
+    }
+    .canvas-open a {
+        width: 31px;
+        height: 31px;
+        line-height: 31px;
+        font-size: 20px;
+        display: inline-block;
+    }
+    .offcanvas-menu {
+        display: block;
+    }
+    .main-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 986px) {
+    .nav-brand a img {
+        max-width: 100%;
+    }
+    .main-menu ul li a {
+        font-size: 12px;
+    }
+    .main-menu {
+        display: none;
+    }
+    .canvas-open {
+        right: 0;
+        top: 0;
+        text-align: right;
+        position: relative;
+        display: block;
+    }
+    .canvas-open a {
+        width: 31px;
+        height: 31px;
+        line-height: 31px;
+        font-size: 20px;
+        display: inline-block;
+    }
+    .main-menu {
+        margin-right: -12px;
+    }
+    .header-top {
+        display: none;
+    }
+    .video-js .vjs-big-play-button {
+        font-size: 40px;
+        line-height: 1.5em;
+        height: 73px;
+        width: 73px;
+        border: 5px solid var(--primary-color) !important;
+    }
+    .card-main {
+        margin: 0px 0;
+    }
+    .display-head {
+        font-size: 35px;
+        line-height: 35px;
+        letter-spacing: 0;
+        margin-bottom: 20px;
+    }
+    .video-head h3 {
+        font-size: 35px;
+        line-height: 34px;
+        letter-spacing: 0;
+        margin-bottom: 22px;
+    }
+    .footer-follow h2 {
+        font-size: 28px;
+        margin-bottom: 3px;
+        line-height: 37px;
+    }
+    .grunge-bg img {
+        width: 35%;
+        image-rendering: -webkit-optimize-contrast;
+    }
+    .banner-cnt-wrap h1 {
+        font-size: 35px;
+    }
+    .our-bikes .display-head {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+    .display-head-secondary {
+        font-size: 18px;
+    }
+    #my_video {
+        height: 295px;
+    }
+    .perform-card-row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .row.gallery_container {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .gallery_container .gallery-col,
+    .video_container .gallery-col {
+        padding: 9px 15px;
+    }
+    .box-content-wrap {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .bikes-row-footer .btns-main {
+        width: 218px;
+    }
+    .our-bikes-card {
+        min-height: 286px;
+        max-height: 286px;
+    }
+    .card-bike-detail h5 {
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+    .card-bike-detail h6 {
+        font-size: 16px;
+        margin-bottom: 0;
+        letter-spacing: 0;
+    }
+    .container.our-bikes {
+        margin-top: 52px;
+    }
+    .video-parallax img {
+        width: 100%;
+    }
+    .video-section-main {
+        min-height: 510px;
+        margin-top: 0;
+        padding-top: 33%;
+        padding-bottom: 70px;
+    }
+    .perform-parallax img {
+        width: 77.6%;
+        margin-left: 0;
+    }
+    .perform-parallax {
+        bottom: -120px;
+    }
+    .perfomance-bg {
+        min-height: 925px;
+        padding-top: 30%;
+    }
+    .card-wrapper {
+        padding: 30px 20px 30px;
+    }
+    .card-img-two img {
+        width: 83px;
+    }
+    .card-image {
+        position: relative;
+        margin-top: 0;
+        padding-bottom: 18px;
+        top: 0;
+    }
+    .card-img-three img {
+        width: 70px;
+    }
+    .perform-content {
+        margin-top: 40px;
+    }
+    .banner-bg {
+        min-height: 500px;
+        background-position: 60% -1px;
+    }
+    .banner-paralax img {
+        width: 70%;
+    }
+    .banner-row {
+        padding-top: 134px;
+    }
+    .banner-paralax {
+        right: 0;
+        bottom: 0;
+        margin-top: 0;
+    }
+    .banner-cnt-wrap p {
+        margin-bottom: 18px;
+    }
+    .top-link-items-left {
+        display: none;
+    }
+    .vjs-big-play-centered .vjs-big-play-button {
+        left: 60%;
+    }
+    .footer-top {
+        padding: 20px 0 40px;
+    }
+    .footer-logos {
+        margin-top: 10px;
+    }
+    .footer-logos img {
+        width: 216px;
+    }
+    .footer-social ul li {
+        margin-right: 26px;
+    }
+    .footer-follow {
+        margin-top: 25px;
+    }
+    .footer-bottom {
+        padding: 18px 0;
+    }
+    .card-img-one img {
+        width: 70px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .offcanvas-menu {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .nav-brand a img {
+        max-width: 100%;
+    }
+    .main-menu {
+        margin-right: -12px;
+    }
+    .display-head {
+        font-size: 35px;
+        line-height: 35px;
+        letter-spacing: 0;
+        margin-bottom: 20px;
+    }
+    .video-head h3 {
+        font-size: 35px;
+        line-height: 34px;
+        letter-spacing: 0;
+        margin-bottom: 22px;
+    }
+    .footer-follow h2 {
+        font-size: 28px;
+        margin-bottom: 3px;
+        line-height: 37px;
+    }
+    .grunge-bg img {
+        width: 35%;
+        image-rendering: -webkit-optimize-contrast;
+    }
+    .banner-cnt-wrap h1 {
+        font-size: 35px;
+    }
+    .our-bikes .display-head {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+    .display-head-secondary {
+        font-size: 18px;
+    }
+    #my_video {
+        height: 295px;
+    }
+    .perform-card-row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .row.gallery_container {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .gallery_container .gallery-col,
+    .video_container .gallery-col {
+        padding: 9px 15px;
+    }
+    .box-content-wrap {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .bikes-row-footer .btns-main {
+        width: 218px;
+    }
+    .our-bikes-card {
+        min-height: 286px;
+        max-height: 286px;
+    }
+    .card-bike-detail h5 {
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+    .card-bike-detail h6 {
+        font-size: 16px;
+        margin-bottom: 0;
+        letter-spacing: 0;
+    }
+    .container.our-bikes {
+        margin-top: 52px;
+    }
+    .video-parallax img {
+        width: 100%;
+    }
+    .video-section-main {
+        min-height: 510px;
+        margin-top: 0;
+        padding-top: 33%;
+        padding-bottom: 70px;
+    }
+    .perform-parallax img {
+        width: 77.6%;
+        margin-left: 0;
+    }
+    .perform-parallax {
+        bottom: -120px;
+    }
+    .perfomance-bg {
+        padding-top: 30%;
+    }
+    .card-wrapper {
+        padding: 30px 20px 30px;
+    }
+    .card-img-two img {
+        width: 83px;
+    }
+    .card-img-one img {
+        width: 70px;
+    }
+    .card-image {
+        position: relative;
+        margin-top: 0;
+        padding-bottom: 18px;
+        top: 0;
+    }
+    .card-img-three img {
+        width: 70px;
+    }
+    .card-main {
+        margin: 0 0;
+    }
+    .perform-content {
+        margin-top: 40px;
+    }
+    .banner-bg {
+        min-height: 642px;
+        background-position: 60% -1px;
+    }
+    .banner-paralax img {
+        width: 70%;
+    }
+    .banner-row {
+        padding-top: 134px;
+    }
+    .banner-paralax {
+        right: 0;
+        bottom: 0;
+        margin-top: 0;
+    }
+    .banner-cnt-wrap p {
+        margin-bottom: 18px;
+    }
+    /*.vjs-big-play-centered .vjs-big-play-button {
+        left: 60%;
+        }*/
+        .footer-top {
+            padding: 20px 0 40px;
+        }
+        .footer-logos {
+            margin-top: 10px;
+        }
+        .footer-logos img {
+            width: 216px;
+        }
+        .footer-social ul li {
+            margin-right: 26px;
+        }
+        .footer-follow {
+            margin-top: 25px;
+        }
+        .footer-bottom {
+            padding: 18px 0;
+        }
+    }
+
+    @media only screen and ( max-width: 1450px) and (min-width: 1025px) {
+        .about-mid-image img{
+            width: 500px;
+            height: auto;
+        }
+        .grunge-bg.grunge-bottom img {
+            width: 20% !important;
+        }
+        .about-content-banner {
+            min-height: 1460px;
+        }
+        .nav-brand a img {
+            max-width: 100%;
+        }
+        .king-cobra-section h2 {
+            font-size: 55px;
+            margin-bottom: 0px;
+        }
+        .king-cobra-section h3 {
+            font-size: 35px;
+        }
+
+        .display-head {
+            font-size: 35px;
+            line-height: 35px;
+            letter-spacing: 0;
+            margin-bottom: 20px;
+        }
+        .about-top-content h2{
+            font-size: 35px;
+            line-height: 35px;
+            letter-spacing: 0;
+            margin-bottom: 20px;
+        }
+        .video-head h3 {
+            font-size: 35px;
+            line-height: 34px;
+            letter-spacing: 0;
+            margin-bottom: 22px;
+        }
+        .footer-follow h2 {
+            font-size: 28px;
+            margin-bottom: 3px;
+            line-height: 37px;
+        }
+        .motorcycle-single-bottom-section h1.review-title{
+            font-size: 40px;
+            line-height: 40px;
+        }
+    /*.motorcycle-single-bottom-section h1.review-title{
+        margin-top: -250px;
+        }*/
+        .motorcycle-single-bottom-section .btns-main {
+            font-size: 15px;
+            line-height: 40px;
+        }
+        .grunge-bg img {
+            width: 35%;
+            image-rendering: -webkit-optimize-contrast;
+        }
+        .banner-cnt-wrap h1 {
+            font-size: 35px;
+        }
+        .cobra-section-2 h6 {
+            font-size: 25px;
+            line-height: 40px;
+        }
+        .our-bikes .display-head {
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
+        .display-head-secondary {
+            font-size: 18px;
+        }
+        #my_video {
+            height: 295px;
+            width: 70%;
+        }
+        .perform-card-row {
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        .row.gallery_container {
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        .gallery_container .gallery-col,
+        .video_container .gallery-col {
+            padding: 9px 15px;
+        }
+        .box-content-wrap {
+            padding-top: 40px;
+            padding-bottom: 50px;
+        }
+        .bikes-row-footer .btns-main {
+            width: 218px;
+        }
+        .our-bikes-card {
+            min-height: 286px;
+            max-height: 286px;
+        }
+        .card-bike-detail h5 {
+            font-size: 20px;
+            letter-spacing: 0;
+        }
+        .card-bike-detail h6 {
+            font-size: 16px;
+            margin-bottom: 0;
+            letter-spacing: 0;
+        }
+        .container.our-bikes {
+            margin-top: 52px;
+        }
+        .video-parallax img {
+            width: 100%;
+        }
+        .video-section-main {
+            min-height: 510px;
+            margin-top: 0;
+            padding-top: 33%;
+            padding-bottom: 70px;
+        }
+        .perform-parallax img {
+            width: 77.6%;
+            margin-left: 0;
+        }
+        .perform-parallax {
+            bottom: -120px;
+        }
+        .perfomance-bg {
+            padding-top: 24%;
+        }
+        .perform-content {
+            margin-top: 40px;
+        }
+        .banner-bg {
+            min-height: 642px;
+            background-position: 60% -1px;
+        }
+        .banner-paralax img {
+            width: 70%;
+        }
+        .banner-row {
+            padding-top: 13%;;
+        }
+        .banner-paralax {
+            right: 0;
+            bottom: 0;
+            margin-top: 0;
+            top: initial;
+        }
+        .banner-cnt-wrap p {
+            margin-bottom: 18px;
+        }
+        .vjs-big-play-centered .vjs-big-play-button {
+            top: 40%;
+        }
+        .footer-top {
+            padding: 20px 0 40px;
+        }
+        .footer-logos {
+            margin-top: 10px;
+        }
+        .footer-logos img {
+            width: 216px;
+        }
+        .footer-social ul li {
+            margin-right: 26px;
+        }
+        .motorcycle-footer-bg .footer-social ul li {
+            margin-right: 90px;
+        }  
+        .footer-follow {
+            margin-top: 25px;
+        }
+        .motorcycle-footer-bg .footer-follow {
+            margin-top: 180px;
+        }
+        .footer-bottom {
+            padding: 18px 0;
+        }
+
+    }
+
+    @media only screen and ( max-width: 1700px) and (min-width: 1280px) {
+        .about-mid-image img{
+            width: 660px;
+            height: auto;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .container,
+        .container-sm {
+            max-width: 95%;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container,
+        .container-sm,
+        .container-md {
+            max-width: 100%;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .container,
+        .container-sm,
+        .container-md,
+        .container-lg,
+        .container-xl {
+            max-width: 960px;
+            max-width: 90%;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container,
+        .container-sm,
+        .container-md,
+        .container-lg,
+        .container-xl {
+            max-width: 1140px;
+        }
+    /* .header-main .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .header-main .container .row {
+        margin-right: -45px;
+        margin-left: -45px;
+        } */
+        .main-menu {
+            text-align: right;
+            margin-right: -12px;
+        }
+        .top-link-items ul li {
+            margin-right: 8px;
+        }
+        .top-link-items .address {
+            display: inline-block;
+        }
+    }
+
+    @media (min-width: 1300px) {
+        .container,
+        .container-sm,
+        .container-md,
+        .container-lg,
+        .container-xl {
+            max-width: 1200px;
+        }
+    /* .header-main .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .header-main .container .row {
+        margin-right: -45px;
+        margin-left: -45px;
+        } */
+        .header-top .container {
+            max-width: 1200px;
+        }
+        .main-menu {
+            text-align: right;
+            margin-right: -30px;
+        }
+        .main-menu ul li a {
+            padding: 10px 30px;
+            font-size: 14px;
+        }
+        .top-link-items ul li {
+            margin-right: 30px;
+        }
+    }
+
+    @media (min-width: 1600px) {}
+
+    @media (max-width: 1920px) {
+        .tab-image-sec img {
+            width: 90%;
+            float: left;
+        }
+
+    }
+    @media only screen and ( max-width: 1920px) and (min-width: 1800px) {
+        .about-main-banner .about-banner {
+            top: unset;
+            bottom: 0px;
+        }
+        .motorcycle-shop-section{
+            padding-bottom: 200px !important;
+        } 
+    }
+
+    @media only screen and ( max-width: 1920px) and (min-width: 1450px) {
+        .motorcycle-shop-section{
+            padding-bottom: 155px !important;
+        } 
+    }
+    @media (max-width: 1450px) {
+        h1.review-title{
+            font-size: 35px;
+            margin-bottom: 3px;
+            line-height: 37px;
+        }
+        .motorcycle-footer .footer-bottom {
+            bottom: -353px;
+        }
+
+        .review-mail-section p {
+            display: block;
+            text-align: center;
+            padding-top: 67px;
+        }
+        .motorcycle-single-banner .grunge-inner-left img {
+            width: 20%;
+        }
+    }
+    @media only screen and ( max-width: 1900px){
+        .tab-image-sec img {
+            width: 60%;
+            float: left;
+        }
+        .grunge-bg.grunge-bottom img{
+            width: 40%;
+        } 
+    }
+    @media only screen and ( min-width: 2000px){
+        .banner-home .banner-row{
+            padding-top: 14%;
+        }
+        .perfomance-bg{
+            min-height: 2000px;
+        }
+    }
