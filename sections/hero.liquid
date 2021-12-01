@@ -11,117 +11,119 @@
     }
   {%- endstyle -%}
 {%- endif -%}
-<div data-section-id="{{ section.id }}" data-section-type="hero-section">
-  {%- if section.settings.hero_layout == 'fixed_width' -%}
-    <div class="page-width">
-  {%- endif -%}
-  {%- if section.settings.hero_layout == 'fixed_width' and section.settings.hero_size ==  'adapt' -%}
-    {%- assign slide_width = 1090 -%}
-    {%- assign min_aspect_ratio = section.settings.image.aspect_ratio | default: 2.0 -%}
-    <div class="hero-fixed-width hero--adapt"
-         id="Hero-{{ section.id }}"
-         data-layout="{{ section.settings.hero_layout }}"
-         data-image-loading-animation>
-      {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-      {%- if section.settings.image.width < max_width -%}
-        {%- assign slide_width = section.settings.image.width -%}
-      {%- endif -%}
-      <div class="hero-fixed-width__content">
-        <div class="page-width text-center">
-          {%- if section.settings.title != blank -%}
-            <h2 class="h1 mega-title{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">{{ section.settings.title | escape }}</h2>
-          {%- endif -%}
-          {%- if section.settings.text != blank -%}
-            <div class="rte-setting mega-subtitle{% if section.settings.text_size == 'large' %} mega-subtitle--large{% endif %}">{{ section.settings.text }}</div>
-          {%- endif -%}
-          {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
-            <a href="{{ section.settings.button_link }}" class="btn hero__btn">
-              {{ section.settings.button_label | escape }}
-            </a>
-          {%- endif -%}
-        </div>
-      </div>
-      {%- if section.settings.image != blank -%}
-        <img class="hero-fixed-width__image lazyload lazypreload"
-             data-src="{{ img_url }}"
-             data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
-             data-aspectratio="{{ section.settings.image.aspect_ratio }}"
-             data-sizes="auto"
-             style="{%- if slide_width <= max_width -%}
-                      {%- assign min_width = slide_width | times: 100 | divided_by: max_width -%}
-                      min-width: {{ min_width }}%;
-                    {%- endif -%}
-                    object-position: {{ section.settings.alignment }};"
-             alt="{{ section.settings.image.alt | escape }}">
-      {%- else -%}
-        <span>
-          {% capture current %}{% cycle 1, 2 %}{% endcapture %}
-          {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
-        </span>
-      {%- endif -%}
-      <noscript>
-        <div class="hero-fixed-width__image"{% if section.settings.image %}{% unless section.settings.image.alt == blank %} role="img" aria-label="{{ section.settings.image.alt | escape }}"{% endunless %} style="background-image: url('{{ section.settings.image | img_url: '2048x' }}'); background-position: center {{ section.settings.alignment }};"{% endif %}></div>
-      </noscript>
-    </div>
-  {%- else -%}
-    <div class="hero hero--{{ section.settings.hero_size }} hero-{{ section.id }}{% if section.settings.title != blank or section.settings.text != blank or section.settings.button_label != blank %} hero__overlay{% endif %} box ratio-container lazyload js"
-         id="Hero-{{ section.id }}"
-         data-layout="{{ section.settings.hero_layout }}"
-         {%- if section.settings.image -%}
-          {% unless section.settings.image.alt == blank %}
-          role="img"
-          aria-label="{{ section.settings.image.alt | escape }}"
-          data-alt="{{ section.settings.image.alt | escape }}"
-          {% endunless %}
-         data-bg="{{ section.settings.image | img_url: '300x300' }}"
-         data-bgset="{% include 'bgset', image: section.settings.image %}"
-         data-sizes="auto"
-         data-parent-fit="cover"
-         style="background-position: {{ section.settings.alignment }};"
-         data-image-loading-animation
-         {%- endif -%}>
-    {%- if section.settings.image == blank -%}
-      <div class="placeholder-background">
-        {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
-      </div>
-    {%- endif -%}
-      <div class="hero__inner">
-        <div class="page-width text-center">
-          {%- if section.settings.title != blank -%}
-            <h2 class="h1 mega-title{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">{{ section.settings.title | escape }}</h2>
-          {%- endif -%}
-          {%- if section.settings.text != blank -%}
-            <div class="rte-setting mega-subtitle{% if section.settings.text_size == 'large' %} mega-subtitle--large{% endif %}">{{ section.settings.text }}</div>
-          {%- endif -%}
-          {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
-            {%- capture ariaLabel -%}
-              {{- section.settings.button_label -}}
-              {%- if section.settings.button_link.type == 'frontpage_link' -%}
-                : {{ 'homepage.general.title' | t -}}
-              {%- elsif section.settings.button_link.type == 'catalog_link' -%}
-                : {{ 'collections.catalog.title' | t -}}
-              {%- elsif section.settings.button_link.object.title -%}
-                : {{ section.settings.button_link.object.title -}}
-              {%- endif -%}
-            {%- endcapture -%}
 
-            <a href="{{ section.settings.button_link }}"
-              class="btn hero__btn"
-              aria-label="{{ ariaLabel }}">
-              {{- section.settings.button_label | escape -}}
-            </a>
-          {%- endif -%}
-        </div>
+<section class="banner-home banner-bg">
+  <div class="banner-main-image">
+      <img src="https://champion.dieselhausdev.com/images/banner-main-pic.jpg" alt="race-image">
+  </div>
+  <div class="paralax-image banner-paralax">
+      <img src="https://champion.dieselhausdev.com/images/race-image-1.png" alt="">
+  </div>
+  <div class="banner-container">
+      <div class="banner-row">
+          <div class="col-md-9 banner-cnt-col left-padding">
+              <div class="banner-cnt-wrap">
+                  {%- if section.settings.title != blank -%}
+                    <h1 class="h1 mega-title{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">{{ section.settings.title | escape }}</h1>
+                  {%- endif -%}
+                  {%- if section.settings.text != blank -%}
+                    <p class="rte-setting mega-subtitle{% if section.settings.text_size == 'large' %} mega-subtitle--large{% endif %}">{{ section.settings.text }}</p>
+                  {%- endif -%}
+
+                  
+                    <div class="btn-wrap">
+                      {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
+                        <a href="{{ section.settings.button_link }}" class="btn hero__btn btns-main btn-primary">
+                          {{ section.settings.button_label | escape }}
+                        </a>
+                      {%- endif -%}
+                      {%- if section.settings.button_label_2 != blank and section.settings.button_link != blank -%}
+                        <a href="{{ section.settings.button_link }}" class="btn hero__btn btns-main btn-border">
+                          {{ section.settings.button_label_2 | escape }}
+                        </a>
+                      {%- endif -%}
+                    </div>
+                  
+                  <!--<div class="btn-wrap">
+                      <a href="#" class="btns-main btn-primary">Shop now</a>
+                      <a href="#" class="btns-main btn-border">Learn more</a>
+                  </div>-->
+              </div>
+          </div>
       </div>
-    </div>
-    <noscript>
-      <div class="hero hero--{{ section.settings.hero_size }}{% if section.settings.title != blank or section.settings.text != blank or section.settings.button_label != blank %} hero__overlay{% endif %}"{% if section.settings.image %}{% unless section.settings.image.alt == blank %} role="img" aria-label="{{ section.settings.image.alt | escape }}"{% endunless %} style="background-image: url('{{ section.settings.image | img_url: '2048x' }}'); background-position: center {{ section.settings.alignment }};"{% endif %}></div>
-    </noscript>
-  {%- endif -%}
-  {%- if section.settings.hero_layout == 'fixed_width' -%}
-    </div>
-  {%- endif -%}
-</div>
+  </div>
+</section>
+
+<section class="perfomance-section perfomance-bg">
+        <div class="perform-parallax">
+            <img src="https://champion.dieselhausdev.com/images/race-image-2.png" alt="race-image">
+        </div>
+        <div class="container">
+            <div class="row perform-card-row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card-main">
+                        <div class="card-wrapper">
+                            <div class="card-image card-img-one">
+                                <img src="https://champion.dieselhausdev.com/images/card-helmet.svg" alt="helmet">
+                            </div>
+                            <div class="card-item">
+                                <h3>Lorem ipsum dolor</h3>
+                                <p>Amet consectetur adipiscing elit. Suspendisse sed urna sed est eleif end porttitor Mauris porttitor, lectus vitae semper congue.</p>
+                                <a href="#" class="btns-main btn-primary">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card-main">
+                        <div class="card-wrapper">
+                            <div class="card-image card-img-two">
+                                <img src="https://champion.dieselhausdev.com/images/trophy.svg" alt="helmet">
+                            </div>
+                            <div class="card-item">
+                                <h3>Consectetur sed</h3>
+                                <p>Amet consectetur adipiscing elit. Suspendisse sed urna sed est eleif end porttitor Mauris porttitor, lectus vitae semper congue.</p>
+                                <a href="#" class="btns-main btn-primary">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card-main">
+                        <div class="card-wrapper">
+                            <div class="card-image card-img-three">
+                                <img src="https://champion.dieselhausdev.com/images/win-flag.svg" alt="helmet">
+                            </div>
+                            <div class="card-item">
+                                <h3>Lectus vitae</h3>
+                                <p>Amet consectetur adipiscing elit. Suspendisse sed urna sed est eleif end porttitor Mauris porttitor, lectus vitae semper congue.</p>
+                                <a href="#" class="btns-main btn-primary">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class=""></div>
+                <div class="col-md-8 offset-md-4">
+                    <div class="perform-content">
+                        <h2 class="display-head"><span class="primary-color">maximum</span> cobra performance
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed urna sed est eleifend porttitor. Mauris porttitor, lectus vitae semper congue, urna lorem sollicitudin purus, vitae consequat lorem libero nec lectus. Proin
+                            eu tellus quis nibh iaculis finibus. Fusce varius interdum nisi vitae pharetra. Maecenas mattis nisl sit amet placerat bibendum. </p>
+                        <p>Mauris ut urna sed justo feugiat accumsan. Vivamus consectetur libero vehicula, volutpat metus at, scelerisque enim. Ut nulla nibh, porttitor et tellus vitae, laoreet tempor purus. Aenean consectetur dictum tellus, id cursus metus
+                            efficitur vitae. Curabitur pretium blandit magna id dictum. Donec eget efficitur ex. Sed nec turpis tincidunt, lobortis tellus porta, eleifend odio.</p>
+                        <div class="btn-wrap perform">
+                            <a href="#" class="btns-main btn-black">Shop now</a>
+                            <a href="#" class="btns-main btn-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 {% schema %}
 {
@@ -129,7 +131,7 @@
     "cs": "Obrázek s textovým překryvem",
     "da": "Billede med tekstoverlejring",
     "de": "Foto mit überlegtem Text",
-    "en": "Image with text overlay",
+    "en": "Hero Banner",
     "es": "Imagen con texto superpuesto",
     "fi": "Kuva päällä olevalla tekstillä",
     "fr": "Image avec calque texte",
@@ -787,6 +789,33 @@
         "vi": "Liên kết trên nút",
         "zh-CN": "按钮链接",
         "zh-TW": "按鈕連結"
+      }
+    },
+    {
+      "type": "text",
+      "id": "button_label_2",
+      "label": {
+        "cs": "Text tlačítka",
+        "da": "Knaptekst",
+        "de": "Schaltflächenbeschriftung",
+        "en": "Button label 2",
+        "es": "Etiqueta de botón",
+        "fi": "Tekstipainike",
+        "fr": "Texte du bouton",
+        "it": "Etichetta pulsante",
+        "ja": "ボタンのラベル",
+        "ko": "버튼 레이블",
+        "nb": "Knappetikett",
+        "nl": "Knoplabel",
+        "pl": "Przycisk z etykietą",
+        "pt-BR": "Etiqueta de botão",
+        "pt-PT": "Etiqueta do botão",
+        "sv": "Knappetikett",
+        "th": "ป้ายกำกับปุ่ม",
+        "tr": "Düğme etiketi",
+        "vi": "Nhãn nút",
+        "zh-CN": "按钮标签",
+        "zh-TW": "按鈕標籤"
       }
     }
   ],

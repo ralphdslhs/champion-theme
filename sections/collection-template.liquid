@@ -17,6 +17,37 @@
 
 {% paginate collection.products by limit %}
 
+<section class="banner-inner banner-inner-bg">
+  <div class="banner-overlay-image">
+      <img src="https://champion.dieselhausdev.com/images/common-parts-bg.jpg" alt="banner">
+  </div>
+  <div class="banner-inner-image common-parts">
+      <img src="https://champion.dieselhausdev.com/images/common-parts-image-2.png" alt="common-parts-image">
+  </div>
+  <div class="container inner-banner-container">
+      <div class="row inner-banner-row">
+          <div class="col-md-9 banner-cnt-col ">
+              <div class="inner-banner-dtls">
+                  <h1 class="display-head">Order parts</h1>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><span>/</span></li>
+                      <li><a href="#">Common Parts</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="grunge-black">
+      <img src="https://champion.dieselhausdev.com/images/grunge-inner-right.png" alt="">
+  </div>
+</section>
+
+<section class="shop-section shop-main-bg common-part-shop">
+        <div class="grunge-bg grunge-bottom">
+            <img src="https://champion.dieselhausdev.com/images/grunge-shop-bottom.png" alt="">
+        </div>
+
 <div data-section-id="{{ section.id }}" data-section-type="collection-template">
   <header class="collection-header">
     {%- assign is_filter_by_available = false -%}
@@ -230,6 +261,8 @@
     {%- endif -%}
   </div>
 </div>
+
+</section>
 
 {% endpaginate %}
 

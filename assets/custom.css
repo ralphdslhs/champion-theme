@@ -334,6 +334,9 @@ ul li a:hover {
 .main-content {
   padding-top: 0 !important;
 }
+[data-image-loading-animation] {
+  background-color: unset !important;
+}
 /* page: Home start */
 
 .sticky-header.sticky {
