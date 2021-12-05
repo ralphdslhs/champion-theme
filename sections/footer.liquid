@@ -139,9 +139,8 @@
   {%- endif -%}
 {%- endcapture -%}
 
-
 <!-- End of Content Wrapper -->
-<footer class="main-footer pt-footer">
+<footer class="main-footer site-footer pt-footer" role="contentinfo" data-section-id="{{ section.id }}" data-section-type="footer-section" style="padding:0;margin:0;">
     <div class="footer-top footer-bg">
         <div class="container" id="one">
             <div class="row">
@@ -194,7 +193,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-12">
                     <div class="copyright-area">
-                        <p>COPYRIGHT 2021 © CHAMPION CYCLE</p>
+                        <p>COPYRIGHT {{ 'now' | date: "%Y" }} &copy; {{ shop.name | link_to: routes.root_url }}</p>
                     </div>
                 </div>
 
@@ -202,6 +201,8 @@
         </div>
     </div>
 </footer>
+
+
 
 {% schema %}
 {

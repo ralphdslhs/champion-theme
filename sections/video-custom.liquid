@@ -1,0 +1,325 @@
+<section class="video-section-main overlapp-video">
+  <div class="video-parallax">
+      <img src="https://champion.dieselhausdev.com/images/race-image-3.png" alt="race-image">
+  </div>
+  <div class="container">
+      <div class="col-md-12">
+          <div class="video-head">
+              <h3>{{ section.settings.heading_title }}</h3>
+          </div>
+      </div>
+      <div class="col-md-10">
+          <div class="video-wrapper">
+              <div class="video-item" style='position: relative;'>
+                  <video id="my_video" class="video-js vjs-big-play-centered" controls preload="auto" poster="{{ section.settings.image | img_url: '2048x' }}" data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "{{ section.settings.video_link }}"}], "youtube": { "iv_load_policy": 1 } }'>
+                      
+                  </video>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": {
+    "cs": "Video",
+    "da": "Video",
+    "de": "Video",
+    "en": "Video Section",
+    "es": "Video",
+    "fi": "Video",
+    "fr": "Vidéo",
+    "it": "Video",
+    "ja": "動画",
+    "ko": "동영상",
+    "nb": "Video",
+    "nl": "Video",
+    "pl": "Film",
+    "pt-BR": "Vídeo",
+    "pt-PT": "Vídeo",
+    "sv": "Video",
+    "th": "วิดีโอ",
+    "tr": "Video",
+    "vi": "Video",
+    "zh-CN": "视频",
+    "zh-TW": "影片"
+  },
+  "class": "video-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": {
+        "cs": "Titulní obrázek",
+        "da": "Coverbillede",
+        "de": "Titelbild",
+        "en": "Cover image",
+        "es": "Imagen de portada",
+        "fi": "Kansikuva",
+        "fr": "Image de couverture",
+        "it": "Immagine di copertina",
+        "ja": "カバー画像",
+        "ko": "커버 이미지",
+        "nb": "Forsidebilde",
+        "nl": "Coverafbeelding",
+        "pl": "Obraz w tle",
+        "pt-BR": "Imagem de capa",
+        "pt-PT": "Imagem de capa",
+        "sv": "Omslagsbild",
+        "th": "รูปภาพหน้าปก",
+        "tr": "Kapak görseli",
+        "vi": "Ảnh bìa",
+        "zh-CN": "封面图片",
+        "zh-TW": "封面圖片"
+      },
+      "info": {
+        "cs": "Vždy zobrazit na mobilních zařízeních",
+        "da": "Vises altid på mobilenheder",
+        "de": "Wird immer auf Mobilgeräten angezeigt",
+        "en": "Always shown on mobile devices",
+        "es": "Mostrar siempre dispositivos móviles",
+        "fi": "Näytetään aina mobiililaitteissa",
+        "fr": "S'affiche toujours sur les appareils mobiles",
+        "it": "Sempre visualizzata sui dispositivi mobili",
+        "ja": "常にモバイルデバイスに表示",
+        "ko": "모바일 장치에 항상 표시됨",
+        "nb": "Vises alltid på mobilenheter",
+        "nl": "Altijd weergeven op mobiele apparaten",
+        "pl": "Wyświetlane zawsze na urządzeniach mobilnych",
+        "pt-BR": "Sempre exibida em dispositivos móveis",
+        "pt-PT": "Sempre mostrado em dispositivos móveis",
+        "sv": "Visas alltid på mobila enheter",
+        "th": "แสดงบนอุปกรณ์มือถือเสมอ",
+        "tr": "Mobil cihazlarda her zaman gösterilir",
+        "vi": "Luôn hiển thị trên thiết bị di động",
+        "zh-CN": "始终在移动设备上显示",
+        "zh-TW": "一律在行動裝置上顯示"
+      }
+    },
+    {
+      "type": "video_url",
+      "id": "video_link",
+      "label": {
+        "cs": "Odkaz na video",
+        "da": "Videolink",
+        "de": "Video-Link",
+        "en": "Video link",
+        "es": "Enlace de video",
+        "fi": "Videolinkki",
+        "fr": "Lien de la vidéo",
+        "it": "Link video",
+        "ja": "ビデオリンク",
+        "ko": "동영상 링크",
+        "nb": "Videokobling",
+        "nl": "Videolink",
+        "pl": "Link filmu",
+        "pt-BR": "Link do vídeo",
+        "pt-PT": "Ligação do vídeo",
+        "sv": "Videolänk",
+        "th": "ลิงก์วิดีโอ",
+        "tr": "Video bağlantısı",
+        "vi": "Liên kết video",
+        "zh-CN": "视频链接",
+        "zh-TW": "影片連結"
+      },
+      "accept": [
+        "youtube"
+      ],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_overlay",
+      "label": {
+        "cs": "Zobrazit překryv",
+        "da": "Vis overlejring",
+        "de": "Überlagerung zeigen",
+        "en": "Show overlay",
+        "es": "Mostrar superposición",
+        "fi": "Näytä peittokuva",
+        "fr": "Afficher la superposition",
+        "it": "Mostra sovrapposizione",
+        "ja": "オーバーレイを表示する",
+        "ko": "오버레이 표시",
+        "nb": "Vis overlegg",
+        "nl": "Overlay weergeven",
+        "pl": "Pokaż nakładkę",
+        "pt-BR": "Mostrar sobreposição",
+        "pt-PT": "Mostrar sobreposição",
+        "sv": "Visa överlagring",
+        "th": "แสดงการวางซ้อน",
+        "tr": "Yer paylaşımını göster",
+        "vi": "Hiển thị lớp phủ",
+        "zh-CN": "显示叠加",
+        "zh-TW": "顯示疊加層"
+      },
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "heading_title",
+      "label": {
+        "cs": "Nadpis",
+        "da": "Overskrift",
+        "de": "Überschrift",
+        "en": "Heading",
+        "es": "Título",
+        "fi": "Otsake",
+        "fr": "En-tête",
+        "it": "Titolo",
+        "ja": "見出し",
+        "ko": "제목",
+        "nb": "Overskrift",
+        "nl": "Kop",
+        "pl": "Nagłówek",
+        "pt-BR": "Título",
+        "pt-PT": "Título",
+        "sv": "Rubrik",
+        "th": "ส่วนหัว",
+        "tr": "Başlık",
+        "vi": "Tiêu đề",
+        "zh-CN": "标题",
+        "zh-TW": "標題"
+      }
+    },
+    {
+      "type": "select",
+      "id": "text_size",
+      "label": {
+        "cs": "Velikost textu",
+        "da": "Tekststørrelse",
+        "de": "Textgröße",
+        "en": "Text size",
+        "es": "Tamaño del texto",
+        "fi": "Tekstin koko",
+        "fr": "Taille du texte",
+        "it": "Dimensione testo",
+        "ja": "文字サイズ",
+        "ko": "텍스트 사이즈",
+        "nb": "Tekststørrelse",
+        "nl": "Tekengrootte",
+        "pl": "Rozmiar czcionki",
+        "pt-BR": "Tamanho do texto",
+        "pt-PT": "Tamanho do texto",
+        "sv": "Textstorlek",
+        "th": "ขนาดตัวอักษร",
+        "tr": "Metin boyutu",
+        "vi": "Cỡ văn bản",
+        "zh-CN": "文本大小",
+        "zh-TW": "文字尺寸"
+      },
+      "default": "medium",
+      "options": [
+        {
+          "label": {
+            "cs": "Střední",
+            "da": "Medium",
+            "de": "Mittel",
+            "en": "Medium",
+            "es": "Mediano",
+            "fi": "Keskisuuri",
+            "fr": "Moyenne",
+            "it": "Medio",
+            "ja": "中",
+            "ko": "보통",
+            "nb": "Middels",
+            "nl": "Gemiddeld",
+            "pl": "Średnia",
+            "pt-BR": "Médio",
+            "pt-PT": "Intermédio",
+            "sv": "Medium",
+            "th": "ปานกลาง",
+            "tr": "Orta",
+            "vi": "Trung bình",
+            "zh-CN": "中等",
+            "zh-TW": "中等"
+          },
+          "value": "medium"
+        },
+        {
+          "label": {
+            "cs": "Velká",
+            "da": "Stor",
+            "de": "Groß",
+            "en": "Large",
+            "es": "Grande",
+            "fi": "Suuri",
+            "fr": "Grande",
+            "it": "Grande",
+            "ja": "大",
+            "ko": "라지",
+            "nb": "Stor",
+            "nl": "Groot",
+            "pl": "Duża",
+            "pt-BR": "Grande",
+            "pt-PT": "Grande",
+            "sv": "Stor",
+            "th": "ใหญ่",
+            "tr": "Büyük",
+            "vi": "Lớn",
+            "zh-CN": "大",
+            "zh-TW": "大型"
+          },
+          "value": "large"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "cs": "Video",
+        "da": "Video",
+        "de": "Video",
+        "en": "Video Section",
+        "es": "Video",
+        "fi": "Video",
+        "fr": "Vidéo",
+        "it": "Video",
+        "ja": "動画",
+        "ko": "동영상",
+        "nb": "Video",
+        "nl": "Video",
+        "pl": "Film",
+        "pt-BR": "Vídeo",
+        "pt-PT": "Vídeo",
+        "sv": "Video",
+        "th": "วิดีโอ",
+        "tr": "Video",
+        "vi": "Video",
+        "zh-CN": "视频",
+        "zh-TW": "影片"
+      },
+      "category": {
+        "cs": "Video",
+        "da": "Video",
+        "de": "Video",
+        "en": "Video Section",
+        "es": "Video",
+        "fi": "Video",
+        "fr": "Vidéo",
+        "it": "Video",
+        "ja": "動画",
+        "ko": "동영상",
+        "nb": "Video",
+        "nl": "Video",
+        "pl": "Film",
+        "pt-BR": "Vídeo",
+        "pt-PT": "Vídeo",
+        "sv": "Video",
+        "th": "วิดีโอ",
+        "tr": "Video",
+        "vi": "Video",
+        "zh-CN": "视频",
+        "zh-TW": "影片"
+      },
+      "settings": {
+        "show_overlay": true
+      }
+    }
+  ]
+}
+{% endschema %}

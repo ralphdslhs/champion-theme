@@ -1,0 +1,386 @@
+<section class="perfomance-section perfomance-bg">
+        <div class="perform-parallax">
+            <img src="https://champion.dieselhausdev.com/images/race-image-2.png" alt="race-image">
+        </div>
+        <div class="container">
+            <div class="row perform-card-row">
+                {% for block in section.blocks %}
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card-main">
+                        <div class="card-wrapper">
+                            <div class="card-image card-img-one">
+                                <img src="https://champion.dieselhausdev.com/images/card-helmet.svg" alt="helmet">
+                            </div>
+                            <div class="card-item">
+                                <h3>{{ block.settings.card_title }}</h3>
+                                {{ block.settings.text_desc }}
+                                <a href="{{ block.settings.button_link }}" class="btns-main btn-primary">{{ block.settings.button_text }}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}                
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class=""></div>
+                <div class="col-md-8 offset-md-4">
+                    <div class="perform-content">
+                        <h2 class="display-head">{{ section.settings.heading_label }}</h2>
+                        {{ section.settings.content }}
+                        <div class="btn-wrap perform">
+                            <a href="{{ section.settings.button_link }}" class="btns-main btn-black">{{ section.settings.button_label }}</a>
+                            <a href="{{ section.settings.button_link_2 }}" class="btns-main btn-primary">{{ section.settings.button_label_2 }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% schema %}
+{
+  "name": "Cards Section",
+  "max_blocks": 12,
+  "settings": [
+      {
+      "type": "text",
+      "id": "heading_label",
+      "label": {
+        "cs": "Titulek",
+        "da": "Billedtekst",
+        "de": "Bildtext",
+        "en": "Heading Label",
+        "es": "Leyenda",
+        "fi": "Kuvateksti",
+        "fr": "Légende",
+        "it": "Didascalia",
+        "ja": "キャプション",
+        "ko": "캡션",
+        "nb": "Bildetekst",
+        "nl": "Bijschrift",
+        "pl": "Napisy",
+        "pt-BR": "Legenda",
+        "pt-PT": "Legenda",
+        "sv": "Rubrik",
+        "th": "คำบรรยาย",
+        "tr": "Alt yazı",
+        "vi": "Phụ đề",
+        "zh-CN": "字幕",
+        "zh-TW": "說明"
+      }
+    },
+    {
+        "type": "richtext",
+        "id": "content",
+        "label": {
+        "cs": "Text",
+        "da": "Tekst",
+        "de": "Text",
+        "en": "Content",
+        "es": "Texto",
+        "fi": "Teksti",
+        "fr": "Texte",
+        "it": "Testo",
+        "ja": "テキスト",
+        "ko": "텍스트",
+        "nb": "Tekst",
+        "nl": "Tekst",
+        "pl": "Tekst",
+        "pt-BR": "Texto",
+        "pt-PT": "Texto",
+        "sv": "Text",
+        "th": "ข้อความ",
+        "tr": "Metin",
+        "vi": "Văn bản",
+        "zh-CN": "文本",
+        "zh-TW": "文字"
+        }
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": {
+        "cs": "Text tlačítka",
+        "da": "Knaptekst",
+        "de": "Schaltflächenbeschriftung",
+        "en": "Button label",
+        "es": "Etiqueta de botón",
+        "fi": "Tekstipainike",
+        "fr": "Texte du bouton",
+        "it": "Etichetta pulsante",
+        "ja": "ボタンのラベル",
+        "ko": "버튼 레이블",
+        "nb": "Knappetikett",
+        "nl": "Knoplabel",
+        "pl": "Przycisk z etykietą",
+        "pt-BR": "Etiqueta de botão",
+        "pt-PT": "Etiqueta do botão",
+        "sv": "Knappetikett",
+        "th": "ป้ายกำกับปุ่ม",
+        "tr": "Düğme etiketi",
+        "vi": "Nhãn nút",
+        "zh-CN": "按钮标签",
+        "zh-TW": "按鈕標籤"
+      }
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": {
+        "cs": "Tlačítkový odkaz",
+        "da": "Knaplink",
+        "de": "Schaltflächenlink",
+        "en": "Button link",
+        "es": "Enlace de botón",
+        "fi": "Painikelinkki",
+        "fr": "Lien du bouton",
+        "it": "Link pulsante",
+        "ja": "ボタンのリンク",
+        "ko": "버튼 링크",
+        "nb": "Kobling for knapp",
+        "nl": "Knoplink",
+        "pl": "Link przycisku",
+        "pt-BR": "Link de botão",
+        "pt-PT": "Ligação do botão",
+        "sv": "Knapplänk",
+        "th": "ลิงก์ปุ่ม",
+        "tr": "Düğme bağlantısı",
+        "vi": "Liên kết trên nút",
+        "zh-CN": "按钮链接",
+        "zh-TW": "按鈕連結"
+      }
+    },
+    {
+      "type": "text",
+      "id": "button_label_2",
+      "label": {
+        "cs": "Text tlačítka",
+        "da": "Knaptekst",
+        "de": "Schaltflächenbeschriftung",
+        "en": "Button label",
+        "es": "Etiqueta de botón",
+        "fi": "Tekstipainike",
+        "fr": "Texte du bouton",
+        "it": "Etichetta pulsante",
+        "ja": "ボタンのラベル",
+        "ko": "버튼 레이블",
+        "nb": "Knappetikett",
+        "nl": "Knoplabel",
+        "pl": "Przycisk z etykietą",
+        "pt-BR": "Etiqueta de botão",
+        "pt-PT": "Etiqueta do botão",
+        "sv": "Knappetikett",
+        "th": "ป้ายกำกับปุ่ม",
+        "tr": "Düğme etiketi",
+        "vi": "Nhãn nút",
+        "zh-CN": "按钮标签",
+        "zh-TW": "按鈕標籤"
+      }
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": {
+        "cs": "Tlačítkový odkaz",
+        "da": "Knaplink",
+        "de": "Schaltflächenlink",
+        "en": "Button link",
+        "es": "Enlace de botón",
+        "fi": "Painikelinkki",
+        "fr": "Lien du bouton",
+        "it": "Link pulsante",
+        "ja": "ボタンのリンク",
+        "ko": "버튼 링크",
+        "nb": "Kobling for knapp",
+        "nl": "Knoplink",
+        "pl": "Link przycisku",
+        "pt-BR": "Link de botão",
+        "pt-PT": "Ligação do botão",
+        "sv": "Knapplänk",
+        "th": "ลิงก์ปุ่ม",
+        "tr": "Düğme bağlantısı",
+        "vi": "Liên kết trên nút",
+        "zh-CN": "按钮链接",
+        "zh-TW": "按鈕連結"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "type": "quote",
+      "name": {
+        "cs": "Ohlas",
+        "da": "Udtalelse",
+        "de": "Testimonial",
+        "en": "Section Cards",
+        "es": "Testimonio",
+        "fi": "Suositukset",
+        "fr": "Témoignage",
+        "it": "Testimonial",
+        "ja": "お客様の声",
+        "ko": "추천",
+        "nb": "Anbefaling",
+        "nl": "Testimonial",
+        "pl": "Referencja",
+        "pt-BR": "Depoimento",
+        "pt-PT": "Testemunho",
+        "sv": "Kundberättelser",
+        "th": "เสียงชื่นชมจากลูกค้า",
+        "tr": "Kullanıcı görüşü",
+        "vi": "Chứng thực",
+        "zh-CN": "感言",
+        "zh-TW": "推薦文"
+      },
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "card_ico",
+          "label": {
+            "cs": "Obrázek",
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Card Icon",
+            "es": "Imagen",
+            "fi": "Kuva",
+            "fr": "Image",
+            "it": "Immagine",
+            "ja": "画像",
+            "ko": "이미지",
+            "nb": "Bilde",
+            "nl": "Afbeelding",
+            "pl": "Obraz",
+            "pt-BR": "Imagem",
+            "pt-PT": "Imagem",
+            "sv": "Bild",
+            "th": "รูปภาพ",
+            "tr": "Görsel",
+            "vi": "Hình ảnh",
+            "zh-CN": "图片",
+            "zh-TW": "圖片"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "text_desc",
+          "label": {
+            "cs": "Text",
+            "da": "Tekst",
+            "de": "Text",
+            "en": "Text",
+            "es": "Texto",
+            "fi": "Teksti",
+            "fr": "Texte",
+            "it": "Testo",
+            "ja": "テキスト",
+            "ko": "텍스트",
+            "nb": "Tekst",
+            "nl": "Tekst",
+            "pl": "Tekst",
+            "pt-BR": "Texto",
+            "pt-PT": "Texto",
+            "sv": "Text",
+            "th": "ข้อความ",
+            "tr": "Metin",
+            "vi": "Văn bản",
+            "zh-CN": "文本",
+            "zh-TW": "文字"
+          }
+        },
+        {
+          "type": "text",
+          "id": "card_title",
+          "label": {
+            "cs": "Autor",
+            "da": "Forfatter",
+            "de": "Autor",
+            "en": "Title",
+            "es": "Autor",
+            "fi": "Kirjoittaja",
+            "fr": "Auteur",
+            "it": "Autore",
+            "ja": "執筆者",
+            "ko": "작성자",
+            "nb": "Forfatter",
+            "nl": "Auteur",
+            "pl": "Autor",
+            "pt-BR": "Autoria",
+            "pt-PT": "Autoria",
+            "sv": "Upphovsman",
+            "th": "ผู้เขียน",
+            "tr": "Yazar",
+            "vi": "Tác giả",
+            "zh-CN": "作者",
+            "zh-TW": "作者"
+          }
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": {
+            "cs": "Autor",
+            "da": "Forfatter",
+            "de": "Autor",
+            "en": "Button Text",
+            "es": "Autor",
+            "fi": "Kirjoittaja",
+            "fr": "Auteur",
+            "it": "Autore",
+            "ja": "執筆者",
+            "ko": "작성자",
+            "nb": "Forfatter",
+            "nl": "Auteur",
+            "pl": "Autor",
+            "pt-BR": "Autoria",
+            "pt-PT": "Autoria",
+            "sv": "Upphovsman",
+            "th": "ผู้เขียน",
+            "tr": "Yazar",
+            "vi": "Tác giả",
+            "zh-CN": "作者",
+            "zh-TW": "作者"
+          }
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": {
+                "cs": "Tlačítkový odkaz",
+                "da": "Knaplink",
+                "de": "Schaltflächenlink",
+                "en": "Button link",
+                "es": "Enlace de botón",
+                "fi": "Painikelinkki",
+                "fr": "Lien du bouton",
+                "it": "Link pulsante",
+                "ja": "ボタンのリンク",
+                "ko": "버튼 링크",
+                "nb": "Kobling for knapp",
+                "nl": "Knoplink",
+                "pl": "Link przycisku",
+                "pt-BR": "Link de botão",
+                "pt-PT": "Ligação do botão",
+                "sv": "Knapplänk",
+                "th": "ลิงก์ปุ่ม",
+                "tr": "Düğme bağlantısı",
+                "vi": "Liên kết trên nút",
+                "zh-CN": "按钮链接",
+                "zh-TW": "按鈕連結"
+            }
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Cards Section",
+      "category": "ADVANCED LAYOUT"
+    }
+  ]
+}
+
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}

@@ -686,6 +686,7 @@ span.top-icon {
   color: #fff;
   padding-right: 10%;
   line-height: 25px;
+  word-break: break-word;
 }
 
 .btns-main {
@@ -812,6 +813,7 @@ span.top-icon {
 
 .card-item p {
   margin-bottom: 27px;
+  word-break: break-word;
 }
 
 .card-image {
@@ -878,6 +880,7 @@ span.top-icon {
 .perform-content p {
   margin-bottom: 30px;
   line-height: 25px;
+  word-break: break-word;
 }
 
 .btn-wrap.perform {
@@ -901,13 +904,14 @@ span.top-icon {
 .video-section-main {
   background-image: url("https://champion.dieselhausdev.com/images/video-main-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: top center;
   min-height: 1050px;
   margin-top: -15%;
   position: relative;
   padding-top: 13%;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
+  margin-bottom: -14px;
 }
 
 .perform-card-row {
@@ -917,8 +921,12 @@ span.top-icon {
 
 .video-parallax {
   position: absolute;
-  bottom: -3px;
+  bottom: 14px;
   right: 0;
+}
+
+.video-wrapper {
+  padding-bottom: 0 !important;
 }
 
 .perform-parallax img {
